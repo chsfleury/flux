@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Korben</title>
+	<atom:link href="https://korben.info/feed" rel="self" type="application/rss+xml" />
+	<link>https://korben.info</link>
+	<description>Upgrade your mind</description>
+	<lastBuildDate>Tue, 12 Jun 2018 08:34:57 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>SQLPad &#8211; Une application web pour lancer vos requêtes SQL et visualiser les résultats sous la forme de graphiques</title>
+		<link>https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html</link>
+		<comments>https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html#respond</comments>
+		<pubDate>Tue, 12 Jun 2018 08:34:23 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Bidouilleurs]]></category>
+		<category><![CDATA[Développeurs]]></category>
+		<category><![CDATA[Infos]]></category>
+		<category><![CDATA[Service web]]></category>
+		<category><![CDATA[data analyst]]></category>
+		<category><![CDATA[graphiques]]></category>
+		<category><![CDATA[IDE]]></category>
+		<category><![CDATA[SQL]]></category>
+		<category><![CDATA[web application]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103202</guid>
+		<description><![CDATA[SQLPad est une application web qui s&#8217;autohéberge et qui permet de lancer des requêtes SQL et observer les résultats de celles-ci via de jolis graphiques. SQLPad est donc conçu pour aider les data analysts à explorer des données et à en sortir des visualisations sympas totalement configurables, le tout via &#8230; <a href="https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="1920" height="839" src="https://korben.info/app/uploads/2018/06/businessman-working-on-charts-and-graphs-P5A6577.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/businessman-working-on-charts-and-graphs-P5A6577.jpg 1920w, https://korben.info/app/uploads/2018/06/businessman-working-on-charts-and-graphs-P5A6577-300x131.jpg 300w, https://korben.info/app/uploads/2018/06/businessman-working-on-charts-and-graphs-P5A6577-768x336.jpg 768w, https://korben.info/app/uploads/2018/06/businessman-working-on-charts-and-graphs-P5A6577-1024x447.jpg 1024w" sizes="(max-width: 1920px) 100vw, 1920px" data-attachment-id="103262" data-permalink="https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html/businessman-working-on-charts-and-graphs" data-orig-file="https://korben.info/app/uploads/2018/06/businessman-working-on-charts-and-graphs-P5A6577.jpg" data-orig-size="1920,839" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.8&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;NIKON D810&quot;,&quot;caption&quot;:&quot;Businessman working on charts and graphs typing in data on his laptop computer as he works at his desk in the office, overhead view of the desk&quot;,&quot;created_timestamp&quot;:&quot;1452771330&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;35&quot;,&quot;iso&quot;:&quot;400&quot;,&quot;shutter_speed&quot;:&quot;0.01&quot;,&quot;title&quot;:&quot;Businessman working on charts and graphs&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Businessman working on charts and graphs" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/businessman-working-on-charts-and-graphs-P5A6577-300x131.jpg" data-large-file="https://korben.info/app/uploads/2018/06/businessman-working-on-charts-and-graphs-P5A6577-1024x447.jpg"></p><p><a href="https://github.com/rickbergfalk/sqlpad"><strong>SQLPad</strong></a> est une application web qui s&rsquo;autohéberge et qui permet de lancer des requêtes SQL et observer les résultats de celles-ci via de jolis graphiques.</p>
+
+<figure class="wp-block-image alignwide"><img data-attachment-id="103223" data-permalink="https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html/query-editor" data-orig-file="https://korben.info/app/uploads/2018/06/query-editor.png" data-orig-size="1514,989" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="query-editor" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/query-editor-300x196.png" data-large-file="https://korben.info/app/uploads/2018/06/query-editor-1024x669.png" src="https://korben.info/app/uploads/2018/06/query-editor.png" alt="" class="wp-image-103223" srcset="https://korben.info/app/uploads/2018/06/query-editor.png 1514w, https://korben.info/app/uploads/2018/06/query-editor-300x196.png 300w, https://korben.info/app/uploads/2018/06/query-editor-768x502.png 768w, https://korben.info/app/uploads/2018/06/query-editor-1024x669.png 1024w" sizes="(max-width: 1514px) 100vw, 1514px" /></figure>
+
+<p>SQLPad est donc conçu pour aider les data analysts à explorer des données et à en sortir des visualisations sympas totalement configurables, le tout via une interface web épurée et agréable.<br/></p>
+
+<figure class="wp-block-image"><img data-attachment-id="103225" data-permalink="https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html/chart-line" data-orig-file="https://korben.info/app/uploads/2018/06/chart-line.png" data-orig-size="1514,989" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="chart-line" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/chart-line-300x196.png" data-large-file="https://korben.info/app/uploads/2018/06/chart-line-1024x669.png" src="https://korben.info/app/uploads/2018/06/chart-line.png" alt="" class="wp-image-103225" srcset="https://korben.info/app/uploads/2018/06/chart-line.png 1514w, https://korben.info/app/uploads/2018/06/chart-line-300x196.png 300w, https://korben.info/app/uploads/2018/06/chart-line-768x502.png 768w, https://korben.info/app/uploads/2018/06/chart-line-1024x669.png 1024w" sizes="(max-width: 1514px) 100vw, 1514px" /></figure>
+
+<figure class="wp-block-image"><img data-attachment-id="103226" data-permalink="https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html/chart-stacked-bar" data-orig-file="https://korben.info/app/uploads/2018/06/chart-stacked-bar.png" data-orig-size="1514,989" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="chart-stacked-bar" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/chart-stacked-bar-300x196.png" data-large-file="https://korben.info/app/uploads/2018/06/chart-stacked-bar-1024x669.png" src="https://korben.info/app/uploads/2018/06/chart-stacked-bar.png" alt="" class="wp-image-103226" srcset="https://korben.info/app/uploads/2018/06/chart-stacked-bar.png 1514w, https://korben.info/app/uploads/2018/06/chart-stacked-bar-300x196.png 300w, https://korben.info/app/uploads/2018/06/chart-stacked-bar-768x502.png 768w, https://korben.info/app/uploads/2018/06/chart-stacked-bar-1024x669.png 1024w" sizes="(max-width: 1514px) 100vw, 1514px" /></figure>
+
+<p>Chaque requête que vous créez peut être sauvegardée sous la forme d&rsquo;un snippet pour être reprise plus tard et un outil de mesure permet de connaitre les performances de vos requêtes SQL. <br/></p>
+
+<figure class="wp-block-image alignwide"><img data-attachment-id="103220" data-permalink="https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html/queries" data-orig-file="https://korben.info/app/uploads/2018/06/queries.png" data-orig-size="1514,989" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="queries" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/queries-300x196.png" data-large-file="https://korben.info/app/uploads/2018/06/queries-1024x669.png" src="https://korben.info/app/uploads/2018/06/queries.png" alt="" class="wp-image-103220" srcset="https://korben.info/app/uploads/2018/06/queries.png 1514w, https://korben.info/app/uploads/2018/06/queries-300x196.png 300w, https://korben.info/app/uploads/2018/06/queries-768x502.png 768w, https://korben.info/app/uploads/2018/06/queries-1024x669.png 1024w" sizes="(max-width: 1514px) 100vw, 1514px" /></figure>
+
+<p>Pour installer SQLPad, il vous faudra NodeJS et lancer la commande suivante :</p>
+
+<pre class="wp-block-code"><code>npm install sqlpad -g</code></pre>
+
+<p>Et pour lancer SQLPad</p>
+
+<pre class="wp-block-code"><code>sqlpad</code></pre>
+
+<p><a href="http://rickbergfalk.github.io/sqlpad/">Vous pouvez voir les détails du projet ici</a>. Attention, c&rsquo;est un outil destiné à être utilisé en local, alors si vous décidez d&rsquo;exposer SQLPad sur le net pensez à activer le TLS, à mettre un bon mot de passe, désactiver la fonctionnalité de création de compte, un petit WAF devant, sans oublier si vous le pouvez, une détections des éventuelles vulnérabilités.</p>
+
+<p>Enjoy !</p>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/sqlpad-une-application-web-pour-lancer-vos-requetes-sql-et-visualiser-les-resultats-sous-la-forme-de-graphiques.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Les maladies dont les vaccins nous protègent</title>
+		<link>https://korben.info/les-maladies-dont-les-vaccins-nous-protegent.html</link>
+		<comments>https://korben.info/les-maladies-dont-les-vaccins-nous-protegent.html#comments</comments>
+		<pubDate>Mon, 11 Jun 2018 14:41:06 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Bidouilleurs]]></category>
+		<category><![CDATA[Science]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103162</guid>
+		<description><![CDATA[Le youtubeur ﻿Primum Non Nocere a réalisé une vidéo assez longue mais passionnante si vous vous intéressez un peu aux sciences et à la médecine. Il a pris comme point de départ le sujet « chaud » de la vaccination obligatoire, pour faire un rappel nécessaire sur les maladies contre lesquelles ces vaccins &#8230; <a href="https://korben.info/les-maladies-dont-les-vaccins-nous-protegent.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="1920" height="1281" src="https://korben.info/app/uploads/2018/06/doctor-drawing-up-solution-and-filling-syringe-PE2SHDD.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/doctor-drawing-up-solution-and-filling-syringe-PE2SHDD.jpg 1920w, https://korben.info/app/uploads/2018/06/doctor-drawing-up-solution-and-filling-syringe-PE2SHDD-300x200.jpg 300w, https://korben.info/app/uploads/2018/06/doctor-drawing-up-solution-and-filling-syringe-PE2SHDD-768x512.jpg 768w, https://korben.info/app/uploads/2018/06/doctor-drawing-up-solution-and-filling-syringe-PE2SHDD-1024x683.jpg 1024w" sizes="(max-width: 1920px) 100vw, 1920px" data-attachment-id="103194" data-permalink="https://korben.info/les-maladies-dont-les-vaccins-nous-protegent.html/doctor-drawing-up-solution-and-filling-syringe" data-orig-file="https://korben.info/app/uploads/2018/06/doctor-drawing-up-solution-and-filling-syringe-PE2SHDD.jpg" data-orig-size="1920,1281" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;4.5&quot;,&quot;credit&quot;:&quot;Igor Stevanovic&quot;,&quot;camera&quot;:&quot;NIKON D810&quot;,&quot;caption&quot;:&quot;Doctor drawing up solution from vaccine bottle and filling syringe injection for patient vaccination in medical clinic, healthcare and medicine professional working&quot;,&quot;created_timestamp&quot;:&quot;1516373466&quot;,&quot;copyright&quot;:&quot;(C)2017 Igor Stevanovic, [**] Bits And Splits, all rights reserved&quot;,&quot;focal_length&quot;:&quot;105&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.005&quot;,&quot;title&quot;:&quot;Doctor drawing up solution and filling syringe&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Doctor drawing up solution and filling syringe" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/doctor-drawing-up-solution-and-filling-syringe-PE2SHDD-300x200.jpg" data-large-file="https://korben.info/app/uploads/2018/06/doctor-drawing-up-solution-and-filling-syringe-PE2SHDD-1024x683.jpg"></p><p>Le youtubeur ﻿<a href="https://www.youtube.com/channel/UC9BnGZLT4iPaJtDOXYwQuHQ">Primum Non Nocere</a> a réalisé une vidéo assez longue mais passionnante si vous vous intéressez un peu aux sciences et à la médecine.</p>
+
+<p>Il a pris comme point de départ le sujet « chaud » de la vaccination obligatoire, pour faire un rappel nécessaire sur les maladies contre lesquelles ces vaccins protègent.</p>
+
+<figure class="wp-block-image aligncenter is-resized"><img data-attachment-id="103191" data-permalink="https://korben.info/les-maladies-dont-les-vaccins-nous-protegent.html/sign-warning-icon" data-orig-file="https://korben.info/app/uploads/2018/06/sign-warning-icon.png" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="sign-warning-icon" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/sign-warning-icon-300x300.png" data-large-file="https://korben.info/app/uploads/2018/06/sign-warning-icon.png" src="https://korben.info/app/uploads/2018/06/sign-warning-icon.png" alt="" class="wp-image-103191" width="148" height="148" srcset="https://korben.info/app/uploads/2018/06/sign-warning-icon.png 1024w, https://korben.info/app/uploads/2018/06/sign-warning-icon-150x150.png 150w, https://korben.info/app/uploads/2018/06/sign-warning-icon-300x300.png 300w, https://korben.info/app/uploads/2018/06/sign-warning-icon-768x768.png 768w" sizes="(max-width: 148px) 100vw, 148px" /></figure>
+
+<p style="background-color:#ffe401;text-align:center" class="has-background is-regular-text"><strong>C&rsquo;est bien expliqué, et bien illustré avec des photos et des vidéos bien hardcore qui pourraient choquer certaines personnes. <br/></strong><strong>Donc âmes sensibles et hypocondriaques s&rsquo;abstenir.</strong></p>
+
+<p>Si vous voulez en savoir plus sans voir les images des malades, vous pouvez écouter simplement le son, ce sera tout aussi bien.</p>
+
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube">
+	<div class="entry-content-asset"><iframe width="800" height="450" src="https://www.youtube.com/embed/1CifyVPCZ10?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</figure>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/les-maladies-dont-les-vaccins-nous-protegent.html/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Lisez vos ebooks en mode lecture rapide, directement depuis votre terminal</title>
+		<link>https://korben.info/lisez-vos-ebooks-en-mode-lecture-rapide-directement-depuis-votre-terminal.html</link>
+		<comments>https://korben.info/lisez-vos-ebooks-en-mode-lecture-rapide-directement-depuis-votre-terminal.html#comments</comments>
+		<pubDate>Sat, 09 Jun 2018 09:27:26 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Ebook]]></category>
+		<category><![CDATA[Infos]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[MacOS]]></category>
+		<category><![CDATA[ebook]]></category>
+		<category><![CDATA[epub]]></category>
+		<category><![CDATA[epub spritz]]></category>
+		<category><![CDATA[lecture rapide]]></category>
+		<category><![CDATA[lecture rapide spritz]]></category>
+		<category><![CDATA[livre]]></category>
+		<category><![CDATA[spritz]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103122</guid>
+		<description><![CDATA[Si vous voulez vous essayer à la lecture rapide, voici un nouvel outil qui fonctionne dans n&#8217;importe quel terminal Linux et macOS. Nommé Uniread, ce logiciel suit la méthode de lecture rapide mise au point par la société Spritz dont j&#8217;ai déjà parlé ici, là et là. Cette méthode est &#8230; <a href="https://korben.info/lisez-vos-ebooks-en-mode-lecture-rapide-directement-depuis-votre-terminal.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="1920" height="1280" src="https://korben.info/app/uploads/2018/06/spritz-cocktail-P9J3PDM.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/spritz-cocktail-P9J3PDM.jpg 1920w, https://korben.info/app/uploads/2018/06/spritz-cocktail-P9J3PDM-300x200.jpg 300w, https://korben.info/app/uploads/2018/06/spritz-cocktail-P9J3PDM-768x512.jpg 768w, https://korben.info/app/uploads/2018/06/spritz-cocktail-P9J3PDM-1024x683.jpg 1024w" sizes="(max-width: 1920px) 100vw, 1920px" data-attachment-id="103159" data-permalink="https://korben.info/lisez-vos-ebooks-en-mode-lecture-rapide-directement-depuis-votre-terminal.html/spritz-cocktail" data-orig-file="https://korben.info/app/uploads/2018/06/spritz-cocktail-P9J3PDM.jpg" data-orig-size="1920,1280" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;4&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon EOS 5D Mark II&quot;,&quot;caption&quot;:&quot;Spritz Cocktail. Alcoholic beverage based on table with ice cubes and oranges.&quot;,&quot;created_timestamp&quot;:&quot;946687835&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;70&quot;,&quot;iso&quot;:&quot;400&quot;,&quot;shutter_speed&quot;:&quot;0.0025&quot;,&quot;title&quot;:&quot;Spritz Cocktail&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Spritz Cocktail" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/spritz-cocktail-P9J3PDM-300x200.jpg" data-large-file="https://korben.info/app/uploads/2018/06/spritz-cocktail-P9J3PDM-1024x683.jpg"></p><p>Si vous voulez vous essayer à la lecture rapide, voici un nouvel outil qui fonctionne dans n&rsquo;importe quel terminal Linux et macOS.</p>
+
+<p>Nommé <strong>Uniread</strong>, ce logiciel suit la méthode de lecture rapide mise au point par la société <a href="http://spritzinc.com/"><strong>Spritz</strong></a> dont j&rsquo;ai déjà parlé <a href="https://korben.info/la-lecture-rapide-de-sites-web-chrome.html">ici</a>, <a href="https://korben.info/gritz.html">là</a> et <a href="https://korben.info/lecture-rapide-javascript.html">là</a>. Cette méthode est simple puisqu&rsquo;elle consiste à faire défiler les mots un à un très rapidement. Cela permet de « flasher » vos rétines et donc votre cerveau avec les mots d&rsquo;un livre ou d&rsquo;un article.</p>
+
+<figure class="wp-block-embed-youtube wp-block-embed aligncenter is-type-video is-provider-youtube">
+	<div class="entry-content-asset"><iframe width="600" height="450" src="https://www.youtube.com/embed/xQsNMB0b3Nc?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</figure>
+
+<p>Uniread fonctionne grâce à NodeJS et support le format epub propre aux ebooks. Que du bonheur.</p>
+
+<figure class="wp-block-image aligncenter"><img data-attachment-id="103151" data-permalink="https://korben.info/lisez-vos-ebooks-en-mode-lecture-rapide-directement-depuis-votre-terminal.html/spritz" data-orig-file="https://korben.info/app/uploads/2018/06/spritz.gif" data-orig-size="656,384" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="spritz" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/spritz-300x176.gif" data-large-file="https://korben.info/app/uploads/2018/06/spritz.gif" src="https://korben.info/app/uploads/2018/06/spritz.gif" alt="" class="wp-image-103151" /></figure>
+
+<p>Pour installer <a href="https://github.com/nemanjan00/uniread">Uniread</a>, assurez-vous d&rsquo;avoir d&rsquo;abord installé NodeJS puis lancez la ligne de commande suivante :</p>
+
+<pre class="wp-block-preformatted">sudo npm install -g uniread</pre>
+
+<p>Bonne lecture à tous !<br/></p>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/lisez-vos-ebooks-en-mode-lecture-rapide-directement-depuis-votre-terminal.html/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Webosaures spécial rachat de Github</title>
+		<link>https://korben.info/webosaures-special-rachat-de-github.html</link>
+		<comments>https://korben.info/webosaures-special-rachat-de-github.html#respond</comments>
+		<pubDate>Fri, 08 Jun 2018 04:53:42 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Bidouilleurs]]></category>
+		<category><![CDATA[Korben]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[remouk]]></category>
+		<category><![CDATA[webosaures]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103115</guid>
+		<description><![CDATA[Hier pendant la pause déj, avec l&#8217;ami Remouk, nous avons enregistré un nouvel épisode des Webosaures. L&#8217;occasion était trop belle de ne pas parler de Github, de Microsoft et des risques de la centralisation des données. Voici donc le replay pour ceux que ça intéresse. Et pour ceux qui voudraient &#8230; <a href="https://korben.info/webosaures-special-rachat-de-github.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="2560" height="1440" src="https://korben.info/app/uploads/2018/06/live-2018-06-07-github-1440p.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/live-2018-06-07-github-1440p.png 2560w, https://korben.info/app/uploads/2018/06/live-2018-06-07-github-1440p-300x169.png 300w, https://korben.info/app/uploads/2018/06/live-2018-06-07-github-1440p-768x432.png 768w, https://korben.info/app/uploads/2018/06/live-2018-06-07-github-1440p-1024x576.png 1024w" sizes="(max-width: 2560px) 100vw, 2560px" data-attachment-id="103116" data-permalink="https://korben.info/webosaures-special-rachat-de-github.html/live-2018-06-07-github-1440p" data-orig-file="https://korben.info/app/uploads/2018/06/live-2018-06-07-github-1440p.png" data-orig-size="2560,1440" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="live-2018-06-07-github-1440p" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/live-2018-06-07-github-1440p-300x169.png" data-large-file="https://korben.info/app/uploads/2018/06/live-2018-06-07-github-1440p-1024x576.png"></p><p>Hier pendant la pause déj, avec l&rsquo;ami Remouk, nous avons enregistré un nouvel épisode des Webosaures.</p>
+<p>L&rsquo;occasion était trop belle de ne pas parler de Github, de Microsoft et des risques de la centralisation des données.</p>
+<p>Voici donc le replay pour ceux que ça intéresse. Et pour ceux qui voudraient voir les lives et interagir avec nous lors des prochaines sessions, <a href="https://www.youtube.com/channel/UCu34Tq5qMR-FiTYwLyy9U6w">abonnez-vous !</a></p>
+<div class="wp-block-media alignwide"><iframe width="800" height="450" src="https://www.youtube.com/embed/YmJdekkyAA0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>]]></content:encoded>
+			<wfw:commentRss>https://korben.info/webosaures-special-rachat-de-github.html/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Attention à ne pas uploader de trucs sensibles sur Prnt.sc (Lightshot)</title>
+		<link>https://korben.info/attention-a-ne-pas-uploader-de-trucs-sensibles-sur-prnt-sc-lightshot.html</link>
+		<comments>https://korben.info/attention-a-ne-pas-uploader-de-trucs-sensibles-sur-prnt-sc-lightshot.html#comments</comments>
+		<pubDate>Wed, 06 Jun 2018 06:00:59 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Bidouilleurs]]></category>
+		<category><![CDATA[Hackers]]></category>
+		<category><![CDATA[Infos]]></category>
+		<category><![CDATA[Sécurité]]></category>
+		<category><![CDATA[Service web]]></category>
+		<category><![CDATA[lightshot]]></category>
+		<category><![CDATA[prnt.sc]]></category>
+		<category><![CDATA[upload d'images]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103106</guid>
+		<description><![CDATA[Je ne sais pas ce que vous utilisez pour faire vos captures écran et les partager avec vos contacts, mais si vous utilisez Lightshot, faites attention. En effet, Lightshot permet d&#8217;uploader automatiquement sur leurs serveurs des captures écran pour les partager en ligne via leur service https://prnt.sc/ . Suite à &#8230; <a href="https://korben.info/attention-a-ne-pas-uploader-de-trucs-sensibles-sur-prnt-sc-lightshot.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="2182" height="616" src="https://korben.info/app/uploads/2018/06/korben20180220081805-51.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/korben20180220081805-51.png 2182w, https://korben.info/app/uploads/2018/06/korben20180220081805-51-300x85.png 300w, https://korben.info/app/uploads/2018/06/korben20180220081805-51-768x217.png 768w, https://korben.info/app/uploads/2018/06/korben20180220081805-51-1024x289.png 1024w" sizes="(max-width: 2182px) 100vw, 2182px" data-attachment-id="103111" data-permalink="https://korben.info/attention-a-ne-pas-uploader-de-trucs-sensibles-sur-prnt-sc-lightshot.html/korben20180220081805-51" data-orig-file="https://korben.info/app/uploads/2018/06/korben20180220081805-51.png" data-orig-size="2182,616" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="korben20180220081805 51" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/korben20180220081805-51-300x85.png" data-large-file="https://korben.info/app/uploads/2018/06/korben20180220081805-51-1024x289.png"></p><p>Je ne sais pas ce que vous utilisez pour faire vos captures écran et les partager avec vos contacts, mais si vous utilisez <a href="https://app.prntscr.com/en/index.html"><strong>Lightshot</strong></a>, faites attention.</p>
+
+<p>En effet, Lightshot permet d&rsquo;uploader automatiquement sur leurs serveurs des captures écran pour les partager en ligne via leur service <strong><a href="https://prnt.sc/">https://prnt.sc/</a></strong> .</p>
+
+<p>Suite à cet upload, ce que vous obtenez alors c&rsquo;est une simple URL publiques comme celle-ci par exemple : <a href="https://prnt.sc/jrfslz">https://prnt.sc/jrfs<strong>lz</strong>﻿</a></p>
+
+<p>On pourrait la penser aléatoire mais en fait, pas du tout, car si j&rsquo;envoie juste derrière une autre image, j&rsquo;obtiens une séquence qui se suit plus ou moins. Ex :  <a href="https://prnt.sc/jrfsyt">https://prnt.sc/jrfs<strong>yt</strong>﻿</a></p>
+
+<p>Entre mes 2 uploads, comme vous pouvez le voir, il y a eu pas mal d&rsquo;autres gens qui ont aussi partagé des photos ou des screenshots : m1, m2, m3, [&#8230;], yq, yr, ys&#8230;</p>
+
+<p>On comprends donc qu&rsquo;en entrant une suite de chiffres et de lettres de 1 à 6 caractères, il est très facile d&rsquo;aller mater les screenshots / photos d&rsquo;autres personnes. Et on y trouve à boire et à manger. Des captures écran de jeux vidéo, des messages d&rsquo;erreur mais aussi des captures de conversation Skype ou des données plus personnelles comme des adresses postales et des noms. Pas très GDPR compliant tout ça d&rsquo;ailleurs.<br/></p>
+
+<p>Bravo la sécu et clap clap à <a href="https://naimo.me">Naïm Gallouj</a> qui a pointé du doigt ce souci. Notez aussi qu&rsquo;un <a href="https://github.com/senges/lightshot">POC</a> (pas testé de mon côté) permet de récupérer les images en suivant les séquences.<br/></p>
+
+<p>Des services comme Dropbox proposant le même genre de fonctionnalité, balancent comme ID une chaîne aléatoire de genre 100 caractères, ce qui rend plus compliqué la « découverte » de contenus partagés.</p>
+
+<p>Lightshot de son côté a fait très light&#8230; et une fois encore, ça rejoint <a href="https://korben.info/google-facebook-proprietaire-donnees.html">ce que j&rsquo;expliquais dans ce post un peu énervé.</a></p>
+
+<p>En attendant, je vous conseille de changer de crèmerie pour le partage de vos screenshots.<br/></p>
+
+<p>Merci à <a href="https://twitter.com/IJustNeedCoffee/status/1004140829798289408">Charles</a> pour l&rsquo;info</p>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/attention-a-ne-pas-uploader-de-trucs-sensibles-sur-prnt-sc-lightshot.html/feed</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>A lire si vous avez prévu d&#8217;acheter un Mac d&#8217;occasion</title>
+		<link>https://korben.info/si-vous-avez-prevu-dacheter-un-mac-doccasion-lisez-cet-article.html</link>
+		<comments>https://korben.info/si-vous-avez-prevu-dacheter-un-mac-doccasion-lisez-cet-article.html#comments</comments>
+		<pubDate>Tue, 05 Jun 2018 20:16:22 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Infos]]></category>
+		<category><![CDATA[MacOS]]></category>
+		<category><![CDATA[macos]]></category>
+		<category><![CDATA[mojave]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103094</guid>
+		<description><![CDATA[Oyez oyez ! Si vous écumez Le Bon Coin, eBay, ou les brocantes à la recherche de votre prochain Mac d&#8217;occasion, ARRÊTEZ TOUT et lisez cet article. Vous n&#8217;êtes pas sans savoir qu&#8217;Apple a fait sa petite keynote hier. Et parmi toutes les annonces merveilleuses de la firme à la &#8230; <a href="https://korben.info/si-vous-avez-prevu-dacheter-un-mac-doccasion-lisez-cet-article.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="3570" height="2078" src="https://korben.info/app/uploads/2018/06/Mojave.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/Mojave.jpg 3570w, https://korben.info/app/uploads/2018/06/Mojave-300x175.jpg 300w, https://korben.info/app/uploads/2018/06/Mojave-768x447.jpg 768w, https://korben.info/app/uploads/2018/06/Mojave-1024x596.jpg 1024w" sizes="(max-width: 3570px) 100vw, 3570px" data-attachment-id="103102" data-permalink="https://korben.info/si-vous-avez-prevu-dacheter-un-mac-doccasion-lisez-cet-article.html/mojave" data-orig-file="https://korben.info/app/uploads/2018/06/Mojave.jpg" data-orig-size="3570,2078" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Mojave" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/Mojave-300x175.jpg" data-large-file="https://korben.info/app/uploads/2018/06/Mojave-1024x596.jpg"></p><p>Oyez oyez ! Si vous écumez Le Bon Coin, eBay, ou les brocantes à la recherche de votre prochain Mac d&rsquo;occasion, ARRÊTEZ TOUT et lisez cet article.</p>
+
+<p>Vous n&rsquo;êtes pas sans savoir qu&rsquo;Apple a fait sa petite keynote hier. Et parmi toutes les annonces merveilleuses de la firme à la pomme que je n&rsquo;ai pas encore eu le temps de regarder en détail, nous avons eu le droit à un teasing sur <a href="https://www.apple.com/macos/mojave-preview/">macOS 10.14 alias Mojave</a> (oui comme le désert).</p>
+
+<p>Toutefois, vous vous en doutez, cette nouvelle version ne fonctionnera pas sur certains modèle de Macbook et iMac plus anciens. Adieu donc les mises à jour et autres fonctionnalités dans le vent. <strong>Édit : les maj de sécurité resteront possibles.</strong></p>
+
+<p>Donc si vous avez prévu d&rsquo;acheter un Mac d&rsquo;occasion, attention au modèle que vous choisissez car selon son millésime, vous ne pourrez pas le mettre à jour vers Mojave.</p>
+
+<p>Cela s&rsquo;explique par l&rsquo;ancienneté du matos mais comme il n&rsquo;est pas rare de trouver en occaz des Mac de 2009, 2010 ou 2011 parfaitement fonctionnels, certaines personnes pourraient se faire avoir. Notez donc bien que si le matos est plus ancien que 2012, 2013 et dans certains cas 2015, vous l&rsquo;avez dans l&rsquo;os pour la MAJ vers Mojave.<br/></p>
+
+<p>Voici donc la liste du matériel <span style="text-decoration:underline">qui supportera Mojave</span>.</p>
+
+<ul>
+	<li>Macbook début 2015 ou plus récent</li>
+	<li>Macbook Air, mi-2012 ou plus récent</li>
+	<li>Macbook Pro, mi-2012 ou plus récent</li>
+	<li>Mac mini, fin 2012 ou plus récent</li>
+	<li>iMac fin 2012 ou plus récent</li>
+	<li>iMac pro de 2017 ou plus récent</li>
+	<li>Mac Pro fin 2013, mi 2010 et mi 2012 ayant des puces graphiques (GPU) supportant les <a href="https://en.wikipedia.org/wiki/Metal_(API)">API Metal</a>.</li>
+</ul>
+
+<p>Comme tous les possesseurs de Mac &lt; 2012 vont vendre leurs machines en masse dans les jours qui viennent avant qu&rsquo;elles ne perdent trop de valeur, vous risquez d&rsquo;être déçu au moment de vouloir faire la mise à jour.</p>
+
+<p>Par contre, si vous n&rsquo;avez rien à cirer de Mojave, c&rsquo;est aussi une info à connaître pour négocier le prix à la baisse 😉</p>
+
+<p><a href="https://www.howtogeek.com/fyi/your-seven-year-old-mac-cant-run-macos-mojave-so-maybe-sell-it-now/">Source</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/si-vous-avez-prevu-dacheter-un-mac-doccasion-lisez-cet-article.html/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Petit point sur le rachat de Github par Microsoft</title>
+		<link>https://korben.info/petit-point-sur-le-rachat-de-github-par-microsoft.html</link>
+		<comments>https://korben.info/petit-point-sur-le-rachat-de-github-par-microsoft.html#comments</comments>
+		<pubDate>Mon, 04 Jun 2018 10:20:21 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Développement]]></category>
+		<category><![CDATA[Développeurs]]></category>
+		<category><![CDATA[Infos]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[microsoft]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103065</guid>
+		<description><![CDATA[J&#8217;ai écris ce matin un super long article sur le rachat de Github par Microsoft, prenant bien le temps de développer tous mes arguments. Malheureusement, suite à un crash de ma machine + auto-sauvegarde non fonctionnelle (ce que je n&#8217;avais pas vu) et bien j&#8217;ai tout perdu comme un couillon. &#8230; <a href="https://korben.info/petit-point-sur-le-rachat-de-github-par-microsoft.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="2000" height="972" src="https://korben.info/app/uploads/2018/06/Microsoft-is-in-talks-to-buy-GitHub.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/Microsoft-is-in-talks-to-buy-GitHub.jpeg 2000w, https://korben.info/app/uploads/2018/06/Microsoft-is-in-talks-to-buy-GitHub-300x146.jpeg 300w, https://korben.info/app/uploads/2018/06/Microsoft-is-in-talks-to-buy-GitHub-768x373.jpeg 768w, https://korben.info/app/uploads/2018/06/Microsoft-is-in-talks-to-buy-GitHub-1024x498.jpeg 1024w" sizes="(max-width: 2000px) 100vw, 2000px" data-attachment-id="103082" data-permalink="https://korben.info/petit-point-sur-le-rachat-de-github-par-microsoft.html/microsoft-is-in-talks-to-buy-github" data-orig-file="https://korben.info/app/uploads/2018/06/Microsoft-is-in-talks-to-buy-GitHub.jpeg" data-orig-size="2000,972" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Microsoft-is-in-talks-to-buy-GitHub" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/Microsoft-is-in-talks-to-buy-GitHub-300x146.jpeg" data-large-file="https://korben.info/app/uploads/2018/06/Microsoft-is-in-talks-to-buy-GitHub-1024x498.jpeg"></p><p>J&rsquo;ai écris ce matin un super long article sur le rachat de Github par Microsoft, prenant bien le temps de développer tous mes arguments. Malheureusement, suite à un crash de ma machine + auto-sauvegarde non fonctionnelle (ce que je n&rsquo;avais pas vu) et bien j&rsquo;ai tout perdu comme un couillon. Erreur de noob. Ouin.<br/></p>
+
+<p>Donc, comme ça m&rsquo;a un peu dégouté, mais je vais quand même vous faire un résumé qui sera un peu plus brut de décoffrage, moins bien tourné, moins sourcé et argumenté mais tant pis.</p>
+
+<p>Microsoft rachète Github. Ca fait hurler dans les chaumières parce que c&rsquo;est « Microsoft ».</p>
+
+<figure class="wp-block-image aligncenter is-resized"><img data-attachment-id="103062" data-permalink="https://korben.info/?attachment_id=103062" data-orig-file="https://korben.info/app/uploads/2018/06/image.gif" data-orig-size="220,123" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image.gif" data-large-file="https://korben.info/app/uploads/2018/06/image.gif" src="https://korben.info/app/uploads/2018/06/image.gif" alt="" class="wp-image-103062" width="360" height="200" />
+	<figcaption>La communauté Github</figcaption>
+</figure>
+
+<p>Je comprends l&rsquo;émoi mais il ne faut pas oublier le contexte :</p>
+
+<ul>
+	<li wfd-id="272">Que Github est aussi une boite commerciale</li>
+	<li wfd-id="271">Que Github est centralisé</li>
+	<li wfd-id="270">Que Microsoft finance très fortement le logiciel open source depuis des années que ça n&rsquo;a pas l&rsquo;air de trop stresser la majorité des contributeurs open source<br/></li>
+	<li wfd-id="269">Que les employés de Microsoft sont les plus gros contributeurs sur Github, loin devant Google</li>
+	<li wfd-id="268">Que Microsoft est avant tout une boite de dev qui conçoit des outils et des services pour les dev. (Azure, Visual Studio, et une tonne de SDK&#8230;)</li>
+	<li wfd-id="267">Que Microsoft aussi publie masse d&rsquo;<a href="https://opensource.microsoft.com/">outils open source﻿</a></li>
+</ul>
+
+<figure class="wp-block-image aligncenter"><img data-attachment-id="103061" data-permalink="https://korben.info/?attachment_id=103061" data-orig-file="https://korben.info/app/uploads/2018/06/image-6.png" data-orig-size="1242,726" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-6" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-6-300x175.png" data-large-file="https://korben.info/app/uploads/2018/06/image-6-1024x599.png" src="https://korben.info/app/uploads/2018/06/image-6.png" alt="" class="wp-image-103061" srcset="https://korben.info/app/uploads/2018/06/image-6.png 1242w, https://korben.info/app/uploads/2018/06/image-6-300x175.png 300w, https://korben.info/app/uploads/2018/06/image-6-768x449.png 768w, https://korben.info/app/uploads/2018/06/image-6-1024x599.png 1024w" sizes="(max-width: 1242px) 100vw, 1242px" />
+	<figcaption><a href="https://www.infoworld.com/article/3253948/open-source-tools/who-really-contributes-to-open-source.html">source</a></figcaption>
+</figure>
+
+<p>Alors que va faire Microsoft ?</p>
+
+<ul>
+	<li wfd-id="499">Laisser Github en l&rsquo;état (peu probable) ?<br/></li>
+	<li wfd-id="498">Reproduire le drame Sourceforge avec Github (possible) ?<br/></li>
+	<li wfd-id="497">Intégrer Github (en conservant la marque ou pas) dans son panel de services pour les dev (fort probable) ?<br/></li>
+</ul>
+
+<p>Après si quelques développeurs se barrent du service, je pense que ça ne va pas trop inquiéter Microsoft qui de toute façon va pouvoir continuer à adresser un marché de professionnels qui ont des gros besoins techniques pour leurs équipes de devs.</p>
+
+<p>Sur le coup, on peut dire que Microsoft a bien joué car ils récupèrent un outil aux fonctionnalités incontournables pour compléter leur gamme de services, tout en mettant la main sur une communauté ultra riche de développeurs, et une bibliothèque de codes tout aussi riche.<br/></p>
+
+<figure class="wp-block-image aligncenter is-resized"><img data-attachment-id="103079" data-permalink="https://korben.info/petit-point-sur-le-rachat-de-github-par-microsoft.html/image-1-15" data-orig-file="https://korben.info/app/uploads/2018/06/image-1.gif" data-orig-size="220,164" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-1.gif" data-large-file="https://korben.info/app/uploads/2018/06/image-1.gif" src="https://korben.info/app/uploads/2018/06/image-1.gif" alt="" class="wp-image-103079" width="398" height="297" /></figure>
+
+<p>Maintenant les options qu&rsquo;ont les développeurs qui utilisent Github :</p>
+
+<ul>
+	<li wfd-id="155">Ne pas migrer et voir ce qui va se passer. (ce que la majorité va faire je pense)<br/></li>
+	<li wfd-id="154">Migrer sur un autre service commercial comme Gitlab ou équivalent (ce qui est en train de se passer&#8230;) mais je trouve ça un peu dommage car c&rsquo;est tout aussi centralisé. Donc si Gitlab se fait racheter dans 2 mois, rebelote.</li>
+	<li wfd-id="153">Passer sur un gitlab géré en mode associatif comme <a href="https://framagit.org/public/projects">Framagit</a>. C&rsquo;est cool mais ça n&#8217;empêchera pas la centralisation.</li>
+	<li wfd-id="152">S&rsquo;auto-héberger avec un script open source comme celui de Gitlab, ce qui est cool mais on aura alors de la fragmentation et on perdra ainsi le côté « bibliothèque de codes » de Github</li>
+</ul>
+
+<p>Enfin, la dernière option serait qu&rsquo;émerge un Mastodon du Git qui offrira à la fois de la décentralisation mais aussi la possibilité de retrouver les contenus via des moteurs de recherches ou des sites. Cela pourrait par exemple se faire sur une base de <a href="https://github.com/axic/mango">Mango</a>, un git décentralisé utilisant IPFS&#8230;</p>
+
+<p>Ce serait l&rsquo;idéal, c&rsquo;est sûr.</p>
+
+<p>Disons donc que les options pour ceux qui veulent fuir Microsoft restent pour le moment assez standards.</p>
+
+<p>Heureusement, la résilience est une chose magnifique et je suis certain que dans quelques mois, tout le monde se sera un peu calmé sur le sujet à part une poignée d&rsquo;anti-microsoftiens bloqués et en boucle depuis 1998.<br/></p>
+
+<figure class="wp-block-image aligncenter is-resized"><img data-attachment-id="103081" data-permalink="https://korben.info/petit-point-sur-le-rachat-de-github-par-microsoft.html/image-2-13" data-orig-file="https://korben.info/app/uploads/2018/06/image-2.gif" data-orig-size="220,165" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-2.gif" data-large-file="https://korben.info/app/uploads/2018/06/image-2.gif" src="https://korben.info/app/uploads/2018/06/image-2.gif" alt="" class="wp-image-103081" width="315" height="236" /></figure>
+
+<p>Voilà pour le résumé express avec pas mal de listes à la place de jolies phrases et moins de pincettes. Mais globalement, ça résume bien ma pensée sur tout ça. Je comprends parfaitement les inquiétudes de certains utilisateurs de Github mais on reste dans une configuration assez simple d&rsquo;une boite privée qui achète une autre boite privée.</p>
+
+<p>Heureusement, Internet est grand et chacun trouvera rapidement son bonheur.<br/></p>
+
+<p>En tout cas, j&rsquo;ai hâte de voir comment tout ceci va évoluer.<br/></p>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/petit-point-sur-le-rachat-de-github-par-microsoft.html/feed</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		</item>
+		<item>
+		<title>Activer l&#8217;option « Effacer les données après 10 mots de passe erronés » est-il risqué ?</title>
+		<link>https://korben.info/activer-loption-effacer-les-donnees-apres-10-mots-de-passe-errones-est-il-risque.html</link>
+		<comments>https://korben.info/activer-loption-effacer-les-donnees-apres-10-mots-de-passe-errones-est-il-risque.html#comments</comments>
+		<pubDate>Fri, 01 Jun 2018 07:57:28 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Bidouilleurs]]></category>
+		<category><![CDATA[Hackers]]></category>
+		<category><![CDATA[Infos]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[Sécurité]]></category>
+		<category><![CDATA[effacer après 10 essais]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[mot de passe erroné]]></category>
+		<category><![CDATA[mot de passe ios]]></category>
+		<category><![CDATA[mot de passe iphone]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103037</guid>
+		<description><![CDATA[Je viens de lire une réflexion intéressante sur le site de Daring Fireball concernant l&#8217;option d&#8217;iOS qui active un effacement total de l&#8217;iPhone après 10 entrées de mots de passe erronés. En ce qui me concerne, ayant des enfants et un ou deux potes bien boulets, je n&#8217;ai jamais activé &#8230; <a href="https://korben.info/activer-loption-effacer-les-donnees-apres-10-mots-de-passe-errones-est-il-risque.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="1920" height="656" src="https://korben.info/app/uploads/2018/06/little-girl-sitting-on-sofa-playing-with-P2S77QH.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/little-girl-sitting-on-sofa-playing-with-P2S77QH.jpg 1920w, https://korben.info/app/uploads/2018/06/little-girl-sitting-on-sofa-playing-with-P2S77QH-300x103.jpg 300w, https://korben.info/app/uploads/2018/06/little-girl-sitting-on-sofa-playing-with-P2S77QH-768x262.jpg 768w, https://korben.info/app/uploads/2018/06/little-girl-sitting-on-sofa-playing-with-P2S77QH-1024x350.jpg 1024w" sizes="(max-width: 1920px) 100vw, 1920px" data-attachment-id="103056" data-permalink="https://korben.info/activer-loption-effacer-les-donnees-apres-10-mots-de-passe-errones-est-il-risque.html/little-girl-sitting-on-sofa-playing-with-smartphone" data-orig-file="https://korben.info/app/uploads/2018/06/little-girl-sitting-on-sofa-playing-with-P2S77QH.jpg" data-orig-size="1920,656" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;13&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;NIKON D800&quot;,&quot;caption&quot;:&quot;Little girl sitting on sofa with a smart phone. Happy child playing indoors.&quot;,&quot;created_timestamp&quot;:&quot;1456419904&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;35&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.00625&quot;,&quot;title&quot;:&quot;Little girl sitting on sofa, playing with smartphone&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Little girl sitting on sofa, playing with smartphone" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/little-girl-sitting-on-sofa-playing-with-P2S77QH-300x103.jpg" data-large-file="https://korben.info/app/uploads/2018/06/little-girl-sitting-on-sofa-playing-with-P2S77QH-1024x350.jpg"></p><p>Je viens de lire une réflexion intéressante sur le site de <strong><a href="https://daringfireball.net/2018/05/10_strikes_and_youre_out">Daring Fireball</a></strong> concernant l&rsquo;option d&rsquo;iOS qui active un effacement total de l&rsquo;iPhone après 10 entrées de mots de passe erronés.</p>
+
+<figure class="wp-block-image aligncenter"><img data-attachment-id="103049" data-permalink="https://korben.info/activer-loption-effacer-les-donnees-apres-10-mots-de-passe-errones-est-il-risque.html/image-5-9" data-orig-file="https://korben.info/app/uploads/2018/06/image-5.png" data-orig-size="750,309" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-5" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-5-300x124.png" data-large-file="https://korben.info/app/uploads/2018/06/image-5.png" src="https://korben.info/app/uploads/2018/06/image-5.png" alt="" class="wp-image-103049" srcset="https://korben.info/app/uploads/2018/06/image-5.png 750w, https://korben.info/app/uploads/2018/06/image-5-300x124.png 300w" sizes="(max-width: 750px) 100vw, 750px" /></figure>
+
+<p>En ce qui me concerne, ayant des enfants et un ou deux potes bien boulets, je n&rsquo;ai jamais activé cette option de peur que cela efface toutes mes données après que ces êtres chers à mon cœur se soient emparés de mon téléphone.</p>
+
+<p>Toutefois, j&rsquo;ignorai qu&rsquo;iOS imposait un délai d&rsquo;attente de plus en plus long entre chaque saisie de mot de passe erroné. En effet, après le 5ème essai, iOS oblige à 60 secondes de pause avant d&rsquo;entrer à nouveau un code. Après le 6ème essai erroné, c&rsquo;est 5 minutes qui sont imposés. Puis après le 7ème essai, c&rsquo;est 15 minutes&#8230; et ainsi de suite.</p>
+
+<p>Ainsi, pour pouvoir entrer 10 codes erronés, il faudra (d&rsquo;après les essais de John Gruber de Daring Fireball) patienter au total 3h. Autant dire qu&rsquo;il y a peu de chance que votre enfant ait la patience ou l&rsquo;opportunité de rester plus de 3h avec votre téléphone à tenter de le déverrouiller.</p>
+
+<p>Ainsi, objectivement, il n&rsquo;y a *pas* vraiment de raison de ne pas activer cette option qui peut servir dans certains cas un peu extrêmes à « protéger » votre vie privée. De plus, avec les sauvegardes qu&rsquo;il est possible de mettre en place (iCloud ou en local avec iTunes), même si un effacement total de votre iPhone survenait, ce ne serait pas un drame.</p>
+
+<p>J&rsquo;ai donc décidé d&rsquo;activer l&rsquo;option tant redoutée quand on est parent.<br/></p>
+
+<p>Et j&rsquo;aurai encore appris un truc aujourd&rsquo;hui.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/activer-loption-effacer-les-donnees-apres-10-mots-de-passe-errones-est-il-risque.html/feed</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>Comment installer TrueCrypt 7.1a sous macOS quand on rencontre l&#8217;erreur « TrueCrypt requires Mac OS X 10.4 or later. » ?</title>
+		<link>https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html</link>
+		<comments>https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html#comments</comments>
+		<pubDate>Fri, 01 Jun 2018 07:46:30 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Bidouilleurs]]></category>
+		<category><![CDATA[Infos]]></category>
+		<category><![CDATA[MacOS]]></category>
+		<category><![CDATA[Sécurité]]></category>
+		<category><![CDATA[chiffrement]]></category>
+		<category><![CDATA[macos]]></category>
+		<category><![CDATA[truecrypt]]></category>
+		<category><![CDATA[truecrypt7.1a]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103040</guid>
+		<description><![CDATA[J&#8217;ai voulu réinstaller TrueCrypt 7.1a sur mon macOS et après l&#8217;avoir téléchargé ici, je me suis heurté à l&#8217;erreur suivante : TrueCrypt requires Mac OS X 10.4 or later. Pas cool, sachant que la version actuelle de macOS est la 10.13.4. Heureusement, il existe un moyen de contourner le problème. &#8230; <a href="https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="1278" height="619" src="https://korben.info/app/uploads/2018/06/truecrypt.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/truecrypt.jpg 1278w, https://korben.info/app/uploads/2018/06/truecrypt-300x145.jpg 300w, https://korben.info/app/uploads/2018/06/truecrypt-768x372.jpg 768w, https://korben.info/app/uploads/2018/06/truecrypt-1024x496.jpg 1024w" sizes="(max-width: 1278px) 100vw, 1278px" data-attachment-id="103046" data-permalink="https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html/truecrypt-2" data-orig-file="https://korben.info/app/uploads/2018/06/truecrypt.jpg" data-orig-size="1278,619" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="truecrypt" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/truecrypt-300x145.jpg" data-large-file="https://korben.info/app/uploads/2018/06/truecrypt-1024x496.jpg"></p><p>J&rsquo;ai voulu réinstaller <strong>TrueCrypt 7.1a</strong> sur mon macOS et après l&rsquo;avoir <a href="https://truecrypt.ch/downloads/">téléchargé ici</a>, je me suis heurté à l&rsquo;erreur suivante :</p>
+
+<figure class="wp-block-image aligncenter"><img data-attachment-id="103042" data-permalink="https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html/image-29" data-orig-file="https://korben.info/app/uploads/2018/06/image.png" data-orig-size="1464,1100" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-300x225.png" data-large-file="https://korben.info/app/uploads/2018/06/image-1024x769.png" src="https://korben.info/app/uploads/2018/06/image.png" alt="" class="wp-image-103042" srcset="https://korben.info/app/uploads/2018/06/image.png 1464w, https://korben.info/app/uploads/2018/06/image-300x225.png 300w, https://korben.info/app/uploads/2018/06/image-768x577.png 768w, https://korben.info/app/uploads/2018/06/image-1024x769.png 1024w" sizes="(max-width: 1464px) 100vw, 1464px" />
+	<figcaption>TrueCrypt requires Mac OS X 10.4 or later.</figcaption>
+</figure>
+
+<p>Pas cool, sachant que la version actuelle de macOS est la 10.13.4.</p>
+
+<p>Heureusement, il existe un moyen de contourner le problème. Voici comment.</p>
+
+<p>Etape 1, copiez le fichier TrueCrypt7.1a.mpkg sur votre disque dur. Faites ensuite un clic droit dessus et faites « Afficher le contenu du paquet »</p>
+
+<figure class="wp-block-image aligncenter"><img data-attachment-id="103045" data-permalink="https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html/image-3-11" data-orig-file="https://korben.info/app/uploads/2018/06/image-3.png" data-orig-size="876,160" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-3" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-3-300x55.png" data-large-file="https://korben.info/app/uploads/2018/06/image-3.png" src="https://korben.info/app/uploads/2018/06/image-3.png" alt="" class="wp-image-103045" srcset="https://korben.info/app/uploads/2018/06/image-3.png 876w, https://korben.info/app/uploads/2018/06/image-3-300x55.png 300w, https://korben.info/app/uploads/2018/06/image-3-768x140.png 768w" sizes="(max-width: 876px) 100vw, 876px" /></figure>
+
+<p>Rendez-vous ensuite dans le dossier « Contents » et éditer avec Textedit ou l&rsquo;éditeur de texte de votre choix, le fichier distribution.dist.<br/></p>
+
+<figure class="wp-block-image"><img data-attachment-id="103043" data-permalink="https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html/image-1-14" data-orig-file="https://korben.info/app/uploads/2018/06/image-1.png" data-orig-size="1120,264" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-1" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-1-300x71.png" data-large-file="https://korben.info/app/uploads/2018/06/image-1-1024x241.png" src="https://korben.info/app/uploads/2018/06/image-1.png" alt="" class="wp-image-103043" srcset="https://korben.info/app/uploads/2018/06/image-1.png 1120w, https://korben.info/app/uploads/2018/06/image-1-300x71.png 300w, https://korben.info/app/uploads/2018/06/image-1-768x181.png 768w, https://korben.info/app/uploads/2018/06/image-1-1024x241.png 1024w" sizes="(max-width: 1120px) 100vw, 1120px" /></figure>
+
+<p>Repérer ensuite les lignes que j&rsquo;ai surligné dans la capture écran ci-dessous. Il s&rsquo;agit du code qui vérifie la version de votre macOS et qui empêche TrueCrypt de s&rsquo;installer. Vous pouvez supprimer tout ce que j&rsquo;ai surligné ou simplement modifier les valeurs.</p>
+
+<figure class="wp-block-image alignwide"><img data-attachment-id="103044" data-permalink="https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html/image-2-12" data-orig-file="https://korben.info/app/uploads/2018/06/image-2.png" data-orig-size="1534,1078" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-2" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-2-300x211.png" data-large-file="https://korben.info/app/uploads/2018/06/image-2-1024x720.png" src="https://korben.info/app/uploads/2018/06/image-2.png" alt="" class="wp-image-103044" srcset="https://korben.info/app/uploads/2018/06/image-2.png 1534w, https://korben.info/app/uploads/2018/06/image-2-300x211.png 300w, https://korben.info/app/uploads/2018/06/image-2-768x540.png 768w, https://korben.info/app/uploads/2018/06/image-2-1024x720.png 1024w" sizes="(max-width: 1534px) 100vw, 1534px" /></figure>
+
+<p>Sauvegardez le fichier, et relancez l&rsquo;installation du package comme au début.</p>
+
+<figure class="wp-block-image"><img data-attachment-id="103047" data-permalink="https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html/image-4-9" data-orig-file="https://korben.info/app/uploads/2018/06/image-4.png" data-orig-size="1508,1310" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-4" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/image-4-300x261.png" data-large-file="https://korben.info/app/uploads/2018/06/image-4-1024x890.png" src="https://korben.info/app/uploads/2018/06/image-4.png" alt="" class="wp-image-103047" srcset="https://korben.info/app/uploads/2018/06/image-4.png 1508w, https://korben.info/app/uploads/2018/06/image-4-300x261.png 300w, https://korben.info/app/uploads/2018/06/image-4-768x667.png 768w, https://korben.info/app/uploads/2018/06/image-4-1024x890.png 1024w" sizes="(max-width: 1508px) 100vw, 1508px" /></figure>
+
+<p>Problème résolu !</p>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/comment-installer-truecrypt-7-1a-sous-macos-quand-on-rencontre-lerreur-truecrypt-requires-mac-os-x-10-4-or-later.html/feed</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Une extension pour nettoyer les URL que vous partagez de tous les trackers UTM_</title>
+		<link>https://korben.info/une-extension-pour-nettoyer-les-url-que-vous-partagez-de-tous-les-trackers-utm_.html</link>
+		<comments>https://korben.info/une-extension-pour-nettoyer-les-url-que-vous-partagez-de-tous-les-trackers-utm_.html#comments</comments>
+		<pubDate>Fri, 01 Jun 2018 04:59:44 +0000</pubDate>
+		<dc:creator><![CDATA[Korben]]></dc:creator>
+				<category><![CDATA[Bidouilleurs]]></category>
+		<category><![CDATA[Infos]]></category>
+		<category><![CDATA[Navigateurs]]></category>
+		<category><![CDATA[nettoyer url]]></category>
+		<category><![CDATA[partage url]]></category>
+		<category><![CDATA[tracker]]></category>
+		<category><![CDATA[UTM_]]></category>
+		<category><![CDATA[vie privée]]></category>
+
+		<guid isPermaLink="false">https://korben.info/?p=103032</guid>
+		<description><![CDATA[Vous n&#8217;avez peut-être jamais prêté attention à cela mais les webmasters qui utilisent Google Analytics, aiment souvent mettre des trackers dans les URLs de leur site. Un peu comme ça : https://korben.info/?utm_source=google&#38;utm_medium=cpc&#38;utm_campaign=promo&#38;utm_term=youpi%2Bjoie&#38;utm_content=1 Cela se matérialise par tout une série de tags que vous pouvez mieux voir lorsque par exemple vous &#8230; <a href="https://korben.info/une-extension-pour-nettoyer-les-url-que-vous-partagez-de-tous-les-trackers-utm_.html">Suite</a>]]></description>
+				<content:encoded><![CDATA[<p><img width="1920" height="803" src="https://korben.info/app/uploads/2018/06/cleaning-car-windshield-KABL4GV.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://korben.info/app/uploads/2018/06/cleaning-car-windshield-KABL4GV.jpg 1920w, https://korben.info/app/uploads/2018/06/cleaning-car-windshield-KABL4GV-300x125.jpg 300w, https://korben.info/app/uploads/2018/06/cleaning-car-windshield-KABL4GV-768x321.jpg 768w, https://korben.info/app/uploads/2018/06/cleaning-car-windshield-KABL4GV-1024x428.jpg 1024w" sizes="(max-width: 1920px) 100vw, 1920px" data-attachment-id="103034" data-permalink="https://korben.info/une-extension-pour-nettoyer-les-url-que-vous-partagez-de-tous-les-trackers-utm_.html/cleaning-car-windshield" data-orig-file="https://korben.info/app/uploads/2018/06/cleaning-car-windshield-KABL4GV.jpg" data-orig-size="1920,803" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;Caucasian Men in His 30s Cleaning His Car Windshield by Removing Water From the Glass.&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;All Rights Reserved.&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;Cleaning Car Windshield&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Cleaning Car Windshield" data-image-description="" data-medium-file="https://korben.info/app/uploads/2018/06/cleaning-car-windshield-KABL4GV-300x125.jpg" data-large-file="https://korben.info/app/uploads/2018/06/cleaning-car-windshield-KABL4GV-1024x428.jpg"></p><p>Vous n&rsquo;avez peut-être jamais prêté attention à cela mais les webmasters qui utilisent Google Analytics, aiment souvent mettre des trackers dans les URLs de leur site.</p>
+
+<p>Un peu comme ça :</p>
+
+<pre class="wp-block-code"><code>https://korben.info/?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=promo&amp;utm_term=youpi%2Bjoie&amp;utm_content=1</code></pre>
+
+<p>Cela se matérialise par tout une série de tags que vous pouvez mieux voir lorsque par exemple vous partagez une URL via Twitter ou que vous la copiez collez. Ces trackers <a href="https://support.google.com/urchin/answer/28307?hl=en">Made by Google</a>, ce sont les suivants :</p>
+
+<ul>
+	<li>utm_source</li>
+	<li>utm_medium</li>
+	<li>utm_term</li>
+	<li>utm_campaign</li>
+	<li>utm_content</li>
+	<li>utm_cid</li>
+	<li>utm_reader</li>
+	<li>utm_name</li>
+</ul>
+
+<p>Le webmaster peut mettre un peu ce qu&rsquo;il veut dans ces paramètres mais globalement, cela lui permet de savoir dans le cadre d&rsquo;une opération publicitaire depuis où vous êtes rentré (moteur de recherche, newsletter, Twitter&#8230;), la campagne publicitaire en cours, le type de contenu que vous êtes en train de consulter (dans le cadre de tests A/B).</p>
+
+<p>En ce qui me concerne, je m&rsquo;arrange pour les nettoyer dans de partager un lien sur mes rézosozios mais il m&rsquo;arrive de zapper.</p>
+
+<p>Heureusement, il existe une extension Chrome et Firefox qui s&rsquo;appelle Tracking Token Stripper qui est capable de nettoyer automatiquement ces petits paramètres AVANT que l&rsquo;URL soit appelée et le site chargé.</p>
+
+<p>Pratique donc pour le côté esthétique de l&rsquo;URL mais aussi pour la vie privée.</p>
+
+<p>Bref, si ça vous intéresse, Tracking Token Stripper est dispo <a href="https://addons.mozilla.org/en-US/firefox/addon/utm-tracking-token-stripper/">pour Firefox</a>, <a href="https://chrome.google.com/webstore/detail/tracking-token-stripper/kcpnkledgcbobhkgimpbmejgockkplob?hl=en">pour Chrome</a> et les sources sont ici <a href="https://github.com/jparise/chrome-utm-stripper">sur Github</a>.</p>
+
+<p>Bon vendredi à tous !</p>
+
+<p><a href="https://lifehacker.com/clean-up-urls-before-you-share-them-with-the-tracking-t-1826459457">Source</a><br/></p>
+]]></content:encoded>
+			<wfw:commentRss>https://korben.info/une-extension-pour-nettoyer-les-url-que-vous-partagez-de-tous-les-trackers-utm_.html/feed</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+	</channel>
+</rss>

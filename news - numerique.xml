@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/atom10frenchfull.xsl"?>
+<?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+    <title>Les Numériques</title>
+    <link rel="alternate" type="text/html" href="https://www.lesnumeriques.com/" />
+    
+    <updated>2018-06-12T14:00:00+02:00</updated>
+    <id>https://www.lesnumeriques.com/</id>
+    <icon>https://dyw7ncnq1en5l.cloudfront.net/optim/images/favicon-LN-rss.png</icon>
+    <logo>https://dyw7ncnq1en5l.cloudfront.net/optim/images/logo-LN-rss.png</logo>
+    <subtitle>Retrouvez toute l'actualité web et high tech, les tests de nos experts, nos guides d'achat et les bons plans du moment de l'univers numérique.</subtitle>
+
+            <feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="lesnumeriques/news" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/atom+xml" href="http://www.lesnumeriques.com/rss.xml" /><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="https://add.my.yahoo.com/content?lg=fr&amp;url=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/bn/intatm_fr_1.gif">Subscribe with Mon Yahoo!</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://www.newsgator.com/images/ngsub1.gif">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.bloglines.com/sub/http://www.lesnumeriques.com/rss.xml" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="//www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://fusion.google.com/add?feedurl=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.plusmo.com/add?url=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://plusmo.com/res/graphics/fbplusmo.gif">Subscribe with Plusmo</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.thefreedictionary.com/_/hp/AddRSS.aspx?http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://img.tfd.com/hp/addToTheFreeDictionary.gif">Subscribe with The Free Dictionary</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.bitty.com/manual/?contenttype=rssfeed&amp;contentvalue=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://www.bitty.com/img/bittychicklet_91x17.gif">Subscribe with Bitty Browser</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.live.com/?add=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://tkfiles.storage.msn.com/x1piYkpqHC_35nIp1gLE68-wvzLZO8iXl_JMledmJQXP-XTBOLfmQv4zhj4MhcWEJh_GtoBIiAl1Mjh-ndp9k47If7hTaFno0mxW9_i3p_5qQw">Subscribe with Live.com</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://mix.excite.eu/add?feedurl=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://image.excite.co.uk/mix/addtomix.gif">Subscribe with Excite MIX</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.webwag.com/wwgthis.php?url=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://www.webwag.com/images/wwgthis.gif">Subscribe with Webwag</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.podcastready.com/oneclick_bookmark.php?url=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://www.podcastready.com/images/podcastready_button.gif">Subscribe with Podcast Ready</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.wikio.com/subscribe?url=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://www.wikio.com/shared/img/add2wikio.gif">Subscribe with Wikio</feedburner:feedFlare><feedburner:feedFlare xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" href="http://www.dailyrotation.com/index.php?feed=http%3A%2F%2Fwww.lesnumeriques.com%2Frss.xml" src="http://www.dailyrotation.com/rss-dr2.gif">Subscribe with Daily Rotation</feedburner:feedFlare><entry>
+                            <title>
+                    <![CDATA[Test : Enceintes actives Audio Pro Addon T14 : de l'énergie à revendre]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/enceintes-home-cinema/audio-pro-addon-t14-p44699/test.html" />
+                <id>tag:www.lesnumeriques.com,2004:1/16873</id>
+                <updated>2018-06-12T14:00:00+02:00</updated>
+                <summary><![CDATA[Après avoir été plutôt convaincus par l'enceinte monobloc Addon T3 d'Audio Pro, nous nous attaquons maintenant aux T14, de plus classiques enceintes bibliothèques actives dotées d'un DAC et d'un récepteur Bluetooth intégrés. Une proposition certes peu originale, mais qui bénéficie ici d'une exécution plutôt réussie.]]></summary>
+                <author>
+                    <name>Florian Agez</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[Après avoir été plutôt convaincus par l'enceinte monobloc Addon T3 d'Audio Pro, nous nous attaquons maintenant aux T14, de plus classiques enceintes bibliothèques actives dotées d'un DAC et d'un récepteur Bluetooth intégrés. Une proposition certes peu originale, mais qui bénéficie ici d'une exécution plutôt réussie. 
+Comme toutes leurs concurrentes, les...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/2591/44699/audio-pro-addon-t14_c49623977cb82e78__400_400.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ E3 2018 – The Last of Us 2, Death Stranding, PS VR... Sony frappe fort]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/jeux-video/the-last-of-us-part-ii-p36461/e3-2018-the-last-of-us-2-death-stranding-ps-vr-sony-frappe-fort-n75091.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75091</id>
+                <updated>2018-06-12T13:29:00+02:00</updated>
+                <summary><![CDATA[Sans donner l'impression de forcer, Sony a livré cette nuit une conférence E3 solide, s'appuyant sur de gros titres en préparation pour sa PlayStation. En tête de liste, un The Last of Us Part II époustouflant, un meilleur aperçu de Death Stranding ou encore l'incroyable Spider-Man.]]></summary>
+                <author>
+                    <name>Fabien Pionneau</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(crédit : PlayStation)
+
+
+La force des exclus
+Il n'en fallait pas plus pour réchauffer l'audience : dès le début de la conférence, Sony a dégainé sa carte maîtresse avec The Last of Us Part II, pour une séquence cinématique entrecoupée par plusieurs minutes de gameplay. On retrouve ici tout le savoir-faire de Naughty Dog, passé maître dans l'art de...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75091/5b1f9a03bd41e.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Palmer Luckey, d'Oculus VR aux technologies de surveillance]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/palmer-luckey-oculus-vr-technologies-surveillance-n75105.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75105</id>
+                <updated>2018-06-12T12:58:00+02:00</updated>
+                <summary><![CDATA[Le controversé Palmer Luckey, cofondateur d'Oculus VR, avait quitté l'entreprise, en 2017, après son rachat par Facebook. Avec sa start-up Anduril, c'est aujourd'hui sur un terrain pentu qu'il s'aventure, en voulant mettre la technologie au service de la surveillance des frontières.]]></summary>
+                <author>
+                    <name>Mathieu Chartier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+En janvier 2015, Palmer Luckey faisait la une de Forbes.
+
+Cela fait un moment déjà que Palmer Luckey, le controversé cofondateur d'Oculus VR, parle de surveillance de la frontière mexicaine et de la création d'un mur virtuel entre les États-Unis et le Mexique. On apprend aujourd'hui qu'il a en fait joint les actes à la parole depuis un moment, communiquant...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75105/5b1f9a0c5a5ba.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ E3 – Beyond Good & Evil 2, AC Odyssey... Ubisoft mise sur ses licences]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/jeux-video/e3-ubisoft-mise-sur-licences-n75103.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75103</id>
+                <updated>2018-06-12T12:16:00+02:00</updated>
+                <summary><![CDATA[Le bal des conférences continue à l’E3 de Los Angeles et, cette nuit, c’était au tour d’Ubisoft de présenter son line-up. Le studio français a misé sur ses licences : une conférence solide,  plaisante, mais sans surprise. ]]></summary>
+                <author>
+                    <name>Pierre Le Goupil</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+
+Assassin's Creed Odyssey, le jeu phare de la conférence. 
+
+Beyond Good and Evil 2
+Le studio a frappé fort d'entrée de jeu en présentant une nouvelle vidéo pour Beyond Good and Evil 2. Véritable court-métrage en 3D, cette vidéo présente l'univers ainsi que les personnages et réserve une surprise de taille à la fin. En ce qui concerne le gameplay,...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75103/5b1f8f44f2157.png" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ La BBC, ITV et Channel 4 s'allient pour résister à Netflix]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/bbc-itv-channel-4-allient-pour-resister-a-netflix-n75097.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75097</id>
+                <updated>2018-06-12T11:44:00+02:00</updated>
+                <summary><![CDATA[En créant une application de streaming commune pour leurs programmes, qui sera intégrée à la plateforme Freeview, trois grandes chaînes anglaises veulent s'adapter à la révolution en cours sur le marché de la télévision pour résister à Netflix et aux géants mondiaux en pleine croissance.]]></summary>
+                <author>
+                    <name>Mathieu Chartier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(crédit : iStock - Vertigo3d)
+
+Trois grandes chaînes de télévision britanniques — BBC, Channel 4 et ITV — ont décidé de faire équipe pour lutter face aux géants du streaming, dont Netflix, qui accaparent toujours plus d'audience. Elles ont ainsi annoncé un investissement commun de 125 millions de livres (environ 142 millions d'euros) pour la création...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75097/5b1f8c206f970.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[Test : Fujifilm Instax Square SQ6 : carré et 100 % instantané]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/appareil-photo-instantane/fujifilm-instax-square-sq6-p44347/test.html" />
+                <id>tag:www.lesnumeriques.com,2004:1/16865</id>
+                <updated>2018-06-12T11:00:00+02:00</updated>
+                <summary><![CDATA[Troisième appareil Fujifilm à accepter du film Instax Square, le SQ6 est le premier modèle du fabriquant japonais à réaliser des prises de vue 100 % en instantané. Il complète ainsi une gamme composée de l’appareil hybride SQ10 sorti l’année dernière et de l’imprimante nomade Instax Share SP-3. Ce n’est cependant pas le premier appareil argentique au format square puisque Lomography propose également le Lomo’Instant Square qui possède l’avantage de recevoir au choix du film Instax Square ou Mini.]]></summary>
+                <author>
+                    <name>Pascale Brites</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[Troisième appareil Fujifilm à accepter du film Instax Square, le SQ6 est le premier modèle du fabriquant japonais à réaliser des prises de vue 100 % en instantané. Il complète ainsi une gamme composée de l’appareil hybride SQ10 sorti l’année dernière et de l’imprimante nomade Instax Share SP-3. Ce n’est cependant pas le premier appareil argentique au format...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/24/44347/fujifilm-sq6_f6e56c0339d70249__400_400.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Carrefour déploie sa stratégie d'e-commerce avec Google]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/carrefour-deploie-sa-strategie-e-commerce-avec-google-n75095.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75095</id>
+                <updated>2018-06-12T10:53:00+02:00</updated>
+                <summary><![CDATA[Carrefour accélère sa "digitalisation" en signant un partenariat important avec Google, qui prévoit notamment la commercialisation de tous les produits de son catalogue via l'Assistant Google.]]></summary>
+                <author>
+                    <name>Mathieu Chartier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(crédit : iStock - aureliefrance)
+Entre les géants de la distribution physique et ceux du Web, c'est l'amour fou. Après avoir vu Monoprix s'allier avec Amazon et Auchan signer avec Alibaba, voilà que Carrefour développe un partenariat avec Google. Cet accord d'importance pour le distributeur français s'articule autour de trois points majeurs : la mise...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75095/5b1f828f82b14.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Oral-B lance Teen, sa brosse à dents connectée pour les ados]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/brosse-a-dent-electrique/oral-b-teen-p44817/oral-b-lance-teen-sa-brosse-a-dents-connectee-pour-ados-n75093.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75093</id>
+                <updated>2018-06-12T10:27:00+02:00</updated>
+                <summary><![CDATA[Le constructeur étoffe sa gamme de brosses à dents électriques connectées avec un modèle souhaitant accompagner les adolescents dans leur rituel d’hygiène bucco-dentaire.]]></summary>
+                <author>
+                    <name>Christophe Séfrin</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+Oral-B se prépare à lancer sa brosse à dents connectée pour les adolescents. Son nom : Teen. Son but : accompagner la famille dans l'apprentissage des gestes d'hygiène bucco-dentaire. Le connecté chez Oral-B n'est pas nouveau : dès 2016, le constructeur s'est lancé sur le terrain de l'hygiène bucco-dentaire 2.0 avec Genius, une brosse à dents électrique...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/691/44817/oral-b-teen_cf2f5ac753c90e95.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Hyundai développe le car-paiement avec Xevo Market]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/voiture/hyundai-developpe-paiement-avec-xevo-market-n75089.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75089</id>
+                <updated>2018-06-12T09:55:00+02:00</updated>
+                <summary><![CDATA[Hyundai développe en partenariat avec Xevo, une solution de paiement depuis l’habitacle de son véhicule. Ainsi, via l’écran tactile de la voiture, il sera aisé pour le conducteur de s’acheter son café, de payer son essence ou son stationnement.
+]]></summary>
+                <author>
+                    <name>Erick Fontaine</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(crédit : Hyundai Motor America)
+
+Alors que le paiement via son téléphone mobile ou sa montre connectée est d'un usage inégal selon que l'on soit en France, en Chine, aux États-Unis ou en Australie, que dire alors du paiement depuis l'habitacle de son véhicule ? Ce service est en cours de développement par des spécialistes tel que Visa qui régulièrement...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75089/5b1f640d684e3.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Les intras UM Pro de Westone profitent d’une nouvelle version]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/casque-audio/intras-um-pro-westone-profitent-d-nouvelle-version-n75051.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75051</id>
+                <updated>2018-06-12T09:02:00+02:00</updated>
+                <summary><![CDATA[En toute discrétion, l'américain Westone, spécialisé dans les écouteurs intra-auriculaires IEM, ont renouvelé toute leur gamme UM PRO. Quatre modèles sont concernés : les UM Pro 10, 20, 30 et 50.]]></summary>
+                <author>
+                    <name>Benoît Campion</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+
+
+
+
+
+L'annonce du rajeunissement de la gamme d'écouteurs intra-auriculaires UM Pro de Westone il y a un an fut si discrète que nous sommes passés à côté. Pour réparer cet oubli, voici les petites nouveautés auxquelles il faut s'attendre. Westone a opéré quelques changements à cette lignée, sans fondamentalement changer la recette. En premier lieu,...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/382/44795/westone-um-pro-10-2017_f78ac8e86b133c6c.png" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Achat de studios, Game Pass... Microsoft mise sur le contenu]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/jeux-video/achat-studios-game-pass-microsoft-mise-sur-contenu-n75087.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75087</id>
+                <updated>2018-06-12T08:31:00+02:00</updated>
+                <summary><![CDATA[Bousculé par les nombreuses exclusivités de Sony pour enrichir la PlayStation 4, Microsoft devait réagir afin de rendre plus attractives ses offres autour de la Xbox. Un objectif qui se traduit par l'intégration de 5 studios et un accent mis sur le Game Pass.]]></summary>
+                <author>
+                    <name>Fabien Pionneau</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+(crédit : Xbox)
+Phil Spencer, le responsable de la division Xbox, l'avait annoncé en novembre dernier, malgré la fermeture quelques mois plus tôt de Lionhead Studios (Fable) et Press Play : "Notre capacité à créer du contenu doit devenir l'une de nos forces." Une promesse semble-t-il en passe d'être tenue, puisque Microsoft Studios vient d'annoncer l'acquisition...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75087/5b1ea21313091.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[Test : Asus Zenfone 5 Lite : un peu trop allégé]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/telephone-portable/asus-zenfone-5-lite-p43383/test.html" />
+                <id>tag:www.lesnumeriques.com,2004:1/16871</id>
+                <updated>2018-06-12T07:00:00+02:00</updated>
+                <summary><![CDATA[Dans la famille Zenfone 5 — celle de 2018 —, le 5 Lite est le petit frère. Un terminal qui met en avant ses capacités en photo avec notamment deux modules à l'avant comme l'arrière. Malheureusement, on ne peut pas dire que la photo soit un point fort pour du Zenfone 5 Lite.]]></summary>
+                <author>
+                    <name>Rémi Jacquet</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[Dans la famille Zenfone 5 — celle de 2018 —, le 5 Lite est le petit frère. Un terminal qui met en avant ses capacités en photo avec notamment deux modules à l'avant comme l'arrière. Malheureusement, on ne peut pas dire que la photo soit un point fort pour du Zenfone 5 Lite. L'Asus Zenfone 5 Lite n'est pas celui qui aura le chemin le plus dégagé dans la famille....<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/150/43383/asus-zenfone-5-lite_3710859fed659936__400_400.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Le fabricant de hottes aspirantes Falmec s'ouvre aux tables de cuisson]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/table-de-cuisson-a-induction/falmec-sintesi-p44785/fabricant-hottes-aspirantes-falmec-ouvre-tables-cuisson-n75059.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75059</id>
+                <updated>2018-06-11T18:53:00+02:00</updated>
+                <summary><![CDATA[Les tables de cuisson à induction équipées d'une hotte aspirante rencontrent un vif succès. Il était donc prévisible que le spécialiste italien du traitement de l'air, Falmec, s'y attaque. La Sintesi compte bien faire de l'ombre aux modèles déjà existants.]]></summary>
+                <author>
+                    <name>Henry Grimaud</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+Peu répandues il y a encore quelques mois, les tables de cuisson équipées d'une hotte aspirante gagnent peu à peu en popularité, et nombreux sont les fabricants (Miele, Siemens ou encore AEG) à sortir leurs modèles. Ces appareils sont plus rapides à installer qu'une table et qu'une hotte séparée et permettent de nombreuses interactions entre les deux fonctions...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75059/5b1e8f4634a31.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Freebox V7 : on connaît (enfin !) sa date de lancement ]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/freebox-v7-son-lancement-est-prevu-pour-septembre-selon-xavier-niel-n75085.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75085</id>
+                <updated>2018-06-12T10:08:00+02:00</updated>
+                <summary><![CDATA[Le patron d'Iliad a profité de la convention annuelle des communautés de freenautes (FrenchDay) de samedi pour évoquer le lancement de la nouvelle Freebox V7. Ce sera en septembre prochain. ]]></summary>
+                <author>
+                    <name>Marco Mosca</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+ 
+
+
+C'est un peu l'arlésienne du monde des opérateurs télécoms. La sortie de la nouvelle box Free fait partie des annonces très attendues depuis de longs mois. En mai dernier, à l'occasion de la présentation des résultats annuels du groupe Iliad, Xavier Niel avait pourtant donné un indice non négligeable, en évoquant une sortie sous quatre mois. Lors...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75085/5b1e9e2833502.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ E3 2018 – La Neo Geo Mini présentée en détail]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/console-de-jeu/snk-neo-geo-mini-p44815/e3-2018-neo-geo-mini-presentee-en-detail-n75081.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75081</id>
+                <updated>2018-06-11T17:56:00+02:00</updated>
+                <summary><![CDATA[Et une mini console rétro de plus, une ! Après la NES, la Super Nintendo, la Megadrive ou encore le Commodore 64, c'est au tour de la Neo Geo de ressortir dans une version compacte. Un petit condensé de l'arcade des années 90, dans un format pour le moins original.]]></summary>
+                <author>
+                    <name>Jean-Kléber Lauret</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+SNK a donc profité de l'E3 2018 pour présenter officiellement sa Neo Geo Mini. Contrairement à la plupart des rééditions de consoles rétro, qui reprennent le plus fidèlement possible le look de la machine d'origine, la Neo Geo Mini ne ressemble pas du tout à la Neo Geo AES sortie en 1990 ni même à la Neo Geo CD apparue en 1994. Nous sommes ici face à une...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/640/44815/snk-neo-geo-mini_ff71dad477b3b3f2.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Lyft et Uber veulent leurs scooters électriques en partage aux USA]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/voiture/lyft-uber-veulent-scooters-electriques-en-partage-usa-n75071.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75071</id>
+                <updated>2018-06-11T17:33:00+02:00</updated>
+                <summary><![CDATA[San Francisco va réguler les sociétés qui proposent des scooters électriques en partage dans ses rues. Une occasion unique pour Uber, mais aussi Lyft, de tester des services alternatifs à leur offre de VTC.]]></summary>
+                <author>
+                    <name>Mathieu Chartier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+Le S2 de Gogoro. Sans doute l'un des scooters électriques les plus tentants du moment (© Gogoro).
+
+Dara Khosrowshahi l'a affirmé à plusieurs reprises : il souhaite pouvoir proposer avec Uber une plateforme de gestion des déplacements qui soit la plus complète possible, et pas uniquement focalisée sur la voiture. Outre sa flotte de chauffeurs et les...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75071/5b1e67103c8cf.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Catastrophes naturelles : Airbnb améliore son programme Open Homes]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/catastrophes-naturelles-airbnb-ameliore-son-programme-open-homes-n75067.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75067</id>
+                <updated>2018-06-11T17:08:00+02:00</updated>
+                <summary><![CDATA[Airbnb veut automatiser une partie de son programme Open Homes. Ce programme permet aux propriétaires de se porter volontaires pour offrir gratuitement un toit aux sinistrés.]]></summary>
+                <author>
+                    <name>Mathieu Chartier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(© iStock - CreativeNature_nl)
+
+En 2012, après que Sandy ait ravagé une partie de la côte Est des États-Unis, Airbnb avait imaginé le Disaster Response Tool, un outil qui devait permettre aux propriétaires de logements vacants d'offrir rapidement un toit aux sinistrés. Depuis, cette initiative s'est transformée en programme à part entière chez Airbnb...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75067/5b1e4b3317a0a.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Top 10 des actus : Free débranche Alice, Tesla Model 3...]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/top-10-actus-free-debranche-alice-tesla-model-3-n75083.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75083</id>
+                <updated>2018-06-11T16:30:00+02:00</updated>
+                <summary><![CDATA[Free débranche Alice, Tesla Model 3 : les chiffres alarmants de la production, 5 € par mois : B&You, Red, Sosh... alignent leurs promos, nouveau scandale Facebook, annonce du smartphone Asus ROG Phone au Computex 2018... Voici les 10 actualités les plus consultées ces 7 derniers jours sur Les Numériques !]]></summary>
+                <author>
+                    <name> LesNumériques</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75083/5b1e7958e3e4e.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Apple : le Taptic Engine arriverait sur le bouton de la Watch]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/montre-connectee/apple-watch-series-3-p41085/apple-taptic-engine-arriverait-sur-bouton-watch-n75075.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75075</id>
+                <updated>2018-06-11T16:17:00+02:00</updated>
+                <summary><![CDATA[Apple a su apporter l'illusion du clic à certains de ses Macbook et iPhone en remplaçant les ressorts par quelques vibrations finement étudiées. Une voie que s'apprêterait à suivre l'Apple Watch.]]></summary>
+                <author>
+                    <name>Mathieu Chartier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+Si l'on en croit Fast Company, la prochaine évolution de l'Apple Watch pourrait abandonner le bouton mécanique de la molette pour le remplacer par un faux bouton simulant le clic grâce à des vibrations haptiques. Il s'agirait, ni plus ni moins, d'apporter à l'Apple Watch une technologie (le Taptic Engine) que les utilisateurs de Macbook Pro (achetés après...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75075/5b1e715c79bdf.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Google et Huawei : une relation inquiétante selon le Congrès américain]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/google-huawei-relation-inquietante-pour-congres-americain-n75077.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75077</id>
+                <updated>2018-06-11T15:55:00+02:00</updated>
+                <summary><![CDATA[Selon le Congrès américain, Google se révèle trop permissif avec Huawei, soupçonné de récupérer les données personnelles des citoyens américains.]]></summary>
+                <author>
+                    <name>Thomas Delozier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+Le Huawei Mate 10 Pro (crédit : Huawei)
+
+Le Congrès américain n'a définitivement pas envie d'aider les entreprises chinoises. En pleine croisade pour empêcher un accord entre ZTE et le gouvernement Trump, les sénateurs ont également un petit quelque chose contre Huawei. Et c'est Google qui risque d'en faire les frais. The Wall Street Journal rapporte ainsi...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75077/5b1e6fce3972d.png" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ E3 2018 – Bethesda mise sur ses valeurs sûres]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/jeux-video/e3-2018-bethesda-mise-sur-valeurs-sures-n75045.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75045</id>
+                <updated>2018-06-11T15:32:00+02:00</updated>
+                <summary><![CDATA[Pour la quatrième année consécutive, Bethesda a donné une conférence en amont de l'E3. L'occasion de dévoiler davantage Rage 2 et Fallout 76, mais également de faire revenir quelques-unes des très grosses licences de l'éditeur.]]></summary>
+                <author>
+                    <name>Jean-Kléber Lauret</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(crédit : Bethesda)
+
+Durant plus d'une heure, Bethesda a déroulé les annonces de jeux et n'a pas hésité à tirer presque toutes ses cartouches. L'éditeur américain avait en effet dans sa besace du Fallout, du Doom, du Rage, du Wolfenstein... et même du Elder Scrolls. La conférence a démarré sur les chapeaux de roues, avec une longue phase de jeu de...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75045/5b1e7ef1bbc7a.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Yahoo! Messenger est mort, vive Squirrel ? ]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/yahoo-messenger-est-mort-vive-squirrel-n75055.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75055</id>
+                <updated>2018-06-11T15:06:00+02:00</updated>
+                <summary><![CDATA[La fuite en avant continue pour le mythique groupe californien Yahoo. Cette fois-ci, c'est au tour de son service de messagerie instantanée Yahoo! Messenger d'annoncer sa fermeture prévue pour le 17 juillet prochain. ]]></summary>
+                <author>
+                    <name>Jérôme Cartegini</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[ 
+Relayée par le site TechCrunch — qui appartient à la même maison mère OATH (une filiale de Verizon Communications) que Yahoo—, l'annonce de la fermeture du fameux service de "chat" Yahoo! Messenger n'est pas vraiment une surprise. Toutes les tentatives de Yahoo! pour faire évoluer son service de messagerie instantanée ces dernières années sont restées...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75055/5b1e69a251cdf.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ E3 2018 – EA reste dans sa zone de confort ]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/jeux-video/ea-games-anthem-p44805/e3-2018-ea-reste-dans-sa-zone-confort-n75057.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75057</id>
+                <updated>2018-06-11T14:47:00+02:00</updated>
+                <summary><![CDATA[Cette année, c’est EA qui a ouvert le bal de l’Electronic Entertainment Expo (E3). Le studio n’a pourtant pas profité de cette position de force en annonçant une myriade de nouveaux titres. En réalité, cette conférence est pour le moment la plus faible du salon. ]]></summary>
+                <author>
+                    <name>Pierre Le Goupil</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+
+Anthem, la star de la conférence. 
+"C'est pas ma guerre !"
+
+C'est un jeu déjà présenté qui a ouvert le salon, puisqu'il s'agit de Battlefield 5. La conférence n'a donné que des miettes aux fans, mais a tout de même montré des séquences de gameplay en multijoueur. Et il y aura aussi un mode Battle royale, car un FPS de 2018 se doit d'avoir son mode...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75057/5b1e409139377.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Nvidia GeForce : un outil de mise à jour utile pour le DisplayPort]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/carte-graphique/nvidia-geforce-outil-mise-a-jour-utile-pour-displayport-n75065.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75065</id>
+                <updated>2018-06-11T14:25:00+02:00</updated>
+                <summary><![CDATA[Nvidia a constaté qu'un certain nombre d'utilisateurs de ses cartes graphiques rencontrait des problèmes d'affichage avec des moniteurs opérant via DisplayPort 1.3 ou 1.4. Le problème ne pouvant être résolu par les pilotes, une mise à jour du firmware des cartes graphiques est indispensable. La manœuvre reste toutefois simple et rapide.]]></summary>
+                <author>
+                    <name>Régis Jehl</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+
+
+
+
+
+Le problème constaté survient aussi bien avec les GeForce 10 qu'avec les deux générations précédentes (GeForce 9 et 7) et ne se rencontre qu'avec les moniteurs opérant en Display 1.3 ou 1.4 — souvent lorsque la fréquence de rafraîchissement est élevée. Celui-ci se caractérise par un écran qui n'affiche qu'un écran noir jusqu'à l'initialisation...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/363/32739/nvidia-geforce-gtx-1080_7935f4409ae193cf.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ E3 2018 – Xbox fait le show avec Gears, Halo, Forza et Cyberpunk 2077]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/jeux-video/e3-2018-xbox-fait-show-avec-gears-halo-forza-cyberpunk-2077-n75039.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75039</id>
+                <updated>2018-06-11T14:13:00+02:00</updated>
+                <summary><![CDATA[Microsoft a une nouvelle fois mis le paquet avec sa conférence Xbox, bien rythmée et riche en nouveaux jeux, parmi lesquels plusieurs exclusivités. Voici ce qu'il faut en retenir.]]></summary>
+                <author>
+                    <name>Fabien Pionneau</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+(crédit : Xbox)
+
+Comment séduire d'emblée les fans Xbox de la première heure dès le début d'une conférence d'ouverture de l'E3 ? Avec un nouvel épisode canonique de la série Halo, bien sûr ! Baptisé Halo Infinite, le jeu préfigure visiblement de vastes environnements qui seront animés par un moteur de jeu maison — le Slipspace Engine, et on vous épargne...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75039/5b1e4c9eaca42.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[Test : Roccat Vulcan 100 : un clavier mécanique fort lumineux]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/clavier/roccat-vulcan-100-p44689/test.html" />
+                <id>tag:www.lesnumeriques.com,2004:1/16859</id>
+                <updated>2018-06-11T14:00:00+02:00</updated>
+                <summary><![CDATA[La série de claviers Vulcan introduit l'interrupteur mécanique maison Titan, conçu par Roccat et fabriqué par le spécialiste TTC. Un interrupteur qui fait la part belle au rétroéclairage et à la qualité de frappe. Au cœur de cette série, le Vulcan 100 met en valeur la technologie de rétroéclairage RGB Aimo.]]></summary>
+                <author>
+                    <name>Fabien Pionneau</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[La série de claviers Vulcan introduit l'interrupteur mécanique maison Titan, conçu par Roccat et fabriqué par le spécialiste TTC. Un interrupteur qui fait la part belle au rétroéclairage et à la qualité de frappe. Au cœur de cette série, le Vulcan 100 met en valeur la technologie de rétroéclairage RGB Aimo. La série Vulcan se compose de trois claviers :...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/371/44689/roccat-vulcan-100_6ca67e89cc59f843__400_400.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ L'iPhone X est le smartphone le plus vendu au monde au 1er trimestre]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/telephone-portable/l-iphone-x-est-smartphone-plus-vendu-monde-1er-trimestre-n75049.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75049</id>
+                <updated>2018-06-11T12:23:00+02:00</updated>
+                <summary><![CDATA[Les analystes de l'institut IHS Markit ont publié leur classement des smartphones les plus vendus dans le monde au 1er trimestre 2018. Apple et Samsung règnent sans partage sur le top 10, avec un iPhone X en tête.]]></summary>
+                <author>
+                    <name>Rémi Jacquet</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+Dans son dernier rapport, l'institut IHS Markit propose un classement des 10 smartphones les plus vendus dans le monde sur les trois premiers mois de l'année 2018. Ce n'est pas une grande surprise, on retrouve Apple et Samsung, qui dominent toujours le marché mondial. C'est l'iPhone X qui occupe la première place, avec 12,7 millions de modèles écoulés...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75049/5b1e46df32b2c.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Prime désormais une marque à part entière]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/prime-devient-marque-a-part-entiere-n75053.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75053</id>
+                <updated>2018-06-11T12:05:00+02:00</updated>
+                <summary><![CDATA[Amazon n'est plus seulement Amazon. La marque "Prime", véritable emblème du distributeur, est devenue le lien développé par le géant entre tous ses services. Et Amazon a décidé de lui offrir une identité propre.]]></summary>
+                <author>
+                    <name>Mathieu Chartier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+
+Sans crier gare, Amazon a peu à peu remplacé son logo "Amazon Prime" de ses services, pour ne plus y faire figurer qu'un nouveau logo "Prime", plus simple et bleu ciel. Amazon Prime Video est devenu Prime Video. Amazon Prime Music est devenu Prime Music. Amazon Prime est devenu Prime. Bref. Cela signifie tout simplement que désormais, Prime est considéré...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75053/5b1e4ba5db36c.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Facebook embauche pour faire la chasse aux fausses infos]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/facebook-embauche-pour-faire-chasse-fausses-infos-n75047.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75047</id>
+                <updated>2018-06-11T11:16:00+02:00</updated>
+                <summary><![CDATA[Après les paroles, les actes. Facebook, qui a ces derniers mois promis de mettre en place une politique active pour éviter aux fausses informations d'envahir ses pages, devrait rapidement constituer des équipes en interne pour les traquer.]]></summary>
+                <author>
+                    <name>Mathieu Chartier</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(crédit : iStock - RichVintage)
+
+Deux offres d'emplois postées par Facebook sous le titre de "News Publisher Specialist" pour des personnes parlant anglais et espagnol témoignent de la volonté du réseau social de constituer des équipes de vérification des informations relayées sur ses pages. En effet, l'adresse URL utilisée en premier lieu dans ces...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75047/5b1e36d370bd1.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Porsche Mission E devient Porsche Taycan]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/voiture/porsche-mission-e-devient-porsche-taycan-n75037.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75037</id>
+                <updated>2018-06-11T10:56:00+02:00</updated>
+                <summary><![CDATA[Porsche vient officiellement de baptiser  son véhicule électrique du nom de Taycan qui signifie "jeune cheval fougueux". Cette première voiture électrique de 600 cv annonce une nouvelle ère pour la marque de Stuttgart.]]></summary>
+                <author>
+                    <name>Erick Fontaine</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(crédit : Porsche)
+
+Il faut bien le reconnaître, nommer un modèle Porsche "Mission E" n'a rien de glamour, bien que se cache un concept-car électrique derrière cette appellation.
+
+
+
+
+
+
+
+La Porsche Taycan gardera-t-elle la ligne générale de la Mission E...
+
+À l'image de ses ainées à motorisation thermique, la première voiture électrique de...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75037/5b1e12bb114a2.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Norman, la première IA psychopathe]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/vie-du-net/norman-premiere-ia-psychopathe-n75011.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75011</id>
+                <updated>2018-06-11T10:07:00+02:00</updated>
+                <summary><![CDATA[Des chercheurs du fameux Massachusetts Institute of Technology (MIT) ont joué au docteur Frankenstein en entraînant un réseau neuronal avec des images violentes. Un projet un peu fou qui vise à alerter l'opinion sur les dérives possibles de l'intelligence artificielle.]]></summary>
+                <author>
+                    <name>Jérôme Cartegini</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+
+
+Baptisé Norman (en référence à Norman Bates, le fameux serial killer, incarné par Anthony Perkins, dans le film Psychose d'Alfred Hitchcock), il s'agit d'un programme d'apprentissage profond conçu pour faire de la reconnaissance automatique d'images. En lieu et place d'images classiques d'humains, d'animaux ou d'objets, les chercheurs du MIT (Massachusetts...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75011/5b1e265053a06.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[Test : Edifier S2000 Pro : un look massif pour des aigus cristallins]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/enceintes-home-cinema/edifier-s2000-pro-p44681/test.html" />
+                <id>tag:www.lesnumeriques.com,2004:1/16857</id>
+                <updated>2018-06-11T10:00:00+02:00</updated>
+                <summary><![CDATA[Avec les enceintes Hi-Fi actives et Bluetooth S2000 Pro, Edifier promet une technologie de pointe dissimulée dans un style... pour le moins classique.
+
+
+
+]]></summary>
+                <author>
+                    <name>Marie Georgescu de Hillerin</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[Avec les enceintes Hi-Fi actives et Bluetooth S2000 Pro, Edifier promet une technologie de pointe dissimulée dans un style... pour le moins classique.
+
+
+
+ 
+
+
+
+
+Le carton pèse lourd, très lourd. Et pour cause, les S2000 Pro sont tout de bois massif conçues, les méandres du bouleau se mariant pacifiquement avec le robuste plastique noir mat constituant...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/420/44681/edifier-s2000-pro_d17e33b28b876f2e__400_400.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Avec Virtuoz, Boulanger se met aux enceintes intelligentes]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/enceintes-portables/boulanger-virtuoz-p44775/avec-virtuoz-boulanger-se-met-enceintes-intelligentes-n75041.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75041</id>
+                <updated>2018-06-11T09:44:00+02:00</updated>
+                <summary><![CDATA[L’arrivée d’Alexa dans l'Hexagone donne définitivement des idées aux fabricants français. Après Archos, c’est au tour de Boulanger de dévoiler une enceinte intégrant l’assistant vocal d’Amazon : Virtuoz.]]></summary>
+                <author>
+                    <name>Benoît Campion</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+La Virtuoz reprend grossièrement l'aspect de l'Amazon Echo : un design tubulaire, une grille en tissu qui parcourt presque intégralement l'enceinte, limitée par deux surfaces en plastique à chaque extrémité. Au-dessus de l'enceinte, on retrouve plusieurs boutons de contrôle : allumage/extinction de l'enceinte, gestion de la lecture musicale, gestion du...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75041/5b1e204bb5049.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ TV : Le micro-Led promet la lune]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/tv-televiseur/tv-micro-led-promet-lune-n75033.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75033</id>
+                <updated>2018-06-11T08:19:00+02:00</updated>
+                <summary><![CDATA[Le micro-Led s'annonce comme le successeur naturel de l'Oled, mais il faut encore dépasser les barrières de la production à grande échelle. Selon l'entreprise Coherent, les capacités du micro-Led sont exceptionnelles.]]></summary>
+                <author>
+                    <name>Tanguy Andrillon</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+Les différentes technologies comparées.
+
+Lors du salon SID Display Week 2018 qui s'est déroulé à la fin du mois de mai à Los Angeles, la société Coherent — fabricant de lasers utilisés pour la fabrication des écrans Oled — a résumé les différences entre les technologies d'affichage que sont le LCD, l'Oled et le micro-Led. Ce dernier s'annonce très...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75033/5b1a928035d82.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[Test : BenQ TK800 : le vidéoprojecteur Ultra HD de BenQ conçu pour le foot]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/videoprojecteur/benq-tk800-p44745/test.html" />
+                <id>tag:www.lesnumeriques.com,2004:1/16867</id>
+                <updated>2018-06-11T07:00:00+02:00</updated>
+                <summary><![CDATA[Le vidéoprojecteur BenQ TK800 ne vise pas les amateurs de cinéma, mais les amateurs de foot qui veulent profiter de la Coupe du monde en Ultra HD. Au menu donc, une très forte luminosité, mais un contraste qui lui interdit un usage en home cinema.]]></summary>
+                <author>
+                    <name>Tanguy Andrillon</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[Le vidéoprojecteur BenQ TK800 ne vise pas les amateurs de cinéma, mais les amateurs de foot qui veulent profiter de la Coupe du monde en Ultra HD. Au menu donc, une très forte luminosité, mais un contraste qui lui interdit un usage en home cinema. Le BenQ TK800 embarque la nouvelle puce Texas Instruments 0,47" 4K UHD qui utilise la wobulation (affichage...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/48/44745/benq-tk800_2a613c9966acb6fb__400_400.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[Test : Miele H6860BP : un four aussi agaçant que séduisant]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/four-encastrable/miele-h6860bp-p44665/test.html" />
+                <id>tag:www.lesnumeriques.com,2004:1/16853</id>
+                <updated>2018-06-10T14:00:00+02:00</updated>
+                <summary><![CDATA[Le four encastrable Miele H6860BP est taillé pour s'imposer face aux concurrents les plus exclusifs que sont le Siemens iQ700 HN678G4S1F ou l'Asko OCS8678G. Le fabricant allemand lui a donc fourni tous les outils nécessaires pour s'acquitter de sa tâche. Néanmoins, de nombreux exemples nous ont montré qu'un four suréquipé n'est pas pour autant un four efficace. Le Miele H6860BP réussira-t-il la synthèse entre les performances de cuisson irréprochables et l'exhaustivité des fonctions ?]]></summary>
+                <author>
+                    <name>Henry Grimaud</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[Le four encastrable Miele H6860BP est taillé pour s'imposer face aux concurrents les plus exclusifs que sont le Siemens iQ700 HN678G4S1F ou l'Asko OCS8678G. Le fabricant allemand lui a donc fourni tous les outils nécessaires pour s'acquitter de sa tâche. Néanmoins, de nombreux exemples nous ont montré qu'un four suréquipé n'est pas pour autant un four efficace....<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/778/44665/miele-h6860bp_91d41569047140c5__400_400.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Kia lève le voile sur la version électrique du Niro EV]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/voiture/kia-leve-voile-sur-version-electrique-niro-ev-n75025.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75025</id>
+                <updated>2018-06-10T13:03:00+02:00</updated>
+                <summary><![CDATA[Lors du Salon automobile de Busan, en Corée du Sud, Kia a un peu dévoilé la version 100 % électrique de son Niro qui sera commercialisée en octobre prochain. Si le design extérieur ne change pas beaucoup, l’intérieur a été totalement revu.]]></summary>
+                <author>
+                    <name>Erick Fontaine</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+(crédit : KIA)
+
+En janvier dernier, lors du dernier CES à Las Vegas, le constructeur automobile Kia dévoilait le Niro EV Concept, la version 100 % électrique du Niro existant alors en versions hybride et hybride rechargeable (plug-in). Puis au mois de mai, le concept devient réalité avec l'apparition du Kia Niro EV. Seul le design extérieur fut affiché....<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75025/5b1a76ba13079.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[Dossier - Quel est le meilleur correcteur orthographique ?]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/appli-logiciel/quel-est-meilleur-correcteur-orthographique-a3767.html" />
+                <id>tag:www.lesnumeriques.com,2004:3/3767</id>
+                <updated>2018-06-10T12:00:00+02:00</updated>
+                <summary><![CDATA[L’essor de l’informatique, la mobilité et Internet amènent à écrire de plus en plus, mais paradoxalement le niveau de la langue ne cesse de se détériorer. Que cela soit dans le cadre professionnel ou personnel, il n’en reste pas moins très important de pouvoir s’exprimer et rédiger correctement. Certains logiciels d’aide à la rédaction tels qu’Antidote, Cordial, ou encore Le Robert Correcteur peuvent non seulement permettre d’éviter de faire des fautes grammaticales, mais également se révéler de remarquables outils d’apprentissage pour enrichir son style. Nous avons confronté ces trois champions de la correction pour savoir s’ils tiennent toutes leurs promesses.]]></summary>
+                <author>
+                    <name>Jérôme Cartegini</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[Avec ses règles de grammaire, de conjugaison, d'accords tortueux, ses faux amis, ses exceptions, ses pléonasmes, sa syntaxe, le français est l'une des langues les plus riches, mais aussi les plus difficiles. Si les correcteurs gratuits intégrés dans les navigateurs web, les services de messagerie ou les traitements de texte sont pratiques pour repérer les...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/article/3767/antidote_1.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Free débranche Alice]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/mobilite/free-debranche-alice-n74993.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/74993</id>
+                <updated>2018-06-10T11:42:00+02:00</updated>
+                <summary><![CDATA[Dans la foulée des résultats décevants publiés en mai dernier et du remaniement qui a suivi, Iliad s'est illustré par une révision en trompe-l'œil du catalogue fixe de Free. Quelques jours plus tard, le groupe s'est occupé de son autre marque, Alice. La dernière offre disponible a tout simplement été supprimée.]]></summary>
+                <author>
+                    <name>Johann Breton</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+
+Ciao, Alice. Après 15 ans de présence sur le marché français, dont cinq sous le pavillon de Telecom Italia et dix sous la bannière d'Iliad, ce dernier a manifestement décidé qu'il était temps de tourner la page. Alors qu'il était encore possible, il y a quelques jours, de souscrire à l'offre Alicebox Initial, seule survivante du catalogue du fournisseur...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/74/74993/5b1a6e363ce20.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+            <entry>
+                            <title>
+                    <![CDATA[ Moss, la petite souris du PlayStation VR sort sur Rift et Vive]]>
+                </title>
+                <link href="https://www.lesnumeriques.com/jeux-video/moss-p44773/moss-petite-souris-playstation-vr-sort-sur-rift-vive-n75035.html" />
+                <id>tag:www.lesnumeriques.com,2004:2/75035</id>
+                <updated>2018-06-10T10:38:00+02:00</updated>
+                <summary><![CDATA[Initialement sorti sur PlayStation 4, et exclusivement compatible avec le casque de réalité virtuelle PlayStation VR, le jeu Moss arrive inopinément sur PC. L'occasion pour un plus large public de découvrir une petite perle de la VR.]]></summary>
+                <author>
+                    <name>Fabien Pionneau</name>
+                </author>
+                <content type="html" xml:lang="fr"><![CDATA[
+Sorti en février dernier, Moss avait su nous séduire par son univers enchanteur et sa gestion intelligente de la réalité virtuelle. Bien que d'une durée trop courte à notre goût, nous ne pouvons donc que le recommander aussi sur PC, si vous avez le plaisir de posséder un casque VR comme l'Oculus Rift et le HTC Vive. Moss est effectivement optimisé pour...<br />
+                        <img src="https://dyw7ncnq1en5l.cloudfront.net/optim/news/75/75035/5b1aa0e84a3e4.jpg" />
+                    ]]>
+                </content>
+                    </entry>
+    </feed>
