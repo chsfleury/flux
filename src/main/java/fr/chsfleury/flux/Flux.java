@@ -3,13 +3,14 @@ package fr.chsfleury.flux;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
-import io.vavr.control.Try;
 import lombok.extern.slf4j.Slf4j;
+import ratpack.exec.Promise;
 import ratpack.handling.Chain;
 import ratpack.handling.Context;
+import ratpack.http.client.HttpClient;
 import ratpack.server.RatpackServer;
 
-import java.net.URL;
+import java.net.URI;
 
 @Slf4j
 public class Flux {
@@ -33,23 +34,29 @@ public class Flux {
         ctx.render("Hello World!");
     }
 
-    private static String tryRead(Context ctx) throws Throwable {
-        String fluxUrlValue = ctx.getRequest().getQueryParams().get("flux");
-        URL fluxUrl = new URL(fluxUrlValue);
-        XmlReader xmlReader = new XmlReader(fluxUrl);
-
-        SyndFeedInput input = new SyndFeedInput();
-        SyndFeed feed = input.build(xmlReader);
-        return feed.toString();
+    private static void read(Context ctx) {
+        ctx.render(
+            doRead(ctx)
+                .map(SyndFeed::toString)
+                .mapError(Flux::renderError)
+        );
     }
 
-    private static void read(Context ctx) {
-        Try.of(() -> tryRead(ctx))
-            .onSuccess(ctx::render)
-            .onFailure(t -> {
-                log.error("error", t);
-                ctx.render(t.getMessage());
+    private static String renderError(Throwable t) {
+        log.error("error", t);
+        return t.getMessage();
+    }
+
+    private static Promise<SyndFeed> doRead(Context ctx) {
+        return Promise
+            .sync(() -> new URI(ctx.getRequest().getQueryParams().get("flux")))
+            .flatMap(uri -> ctx
+                .get(HttpClient.class)
+                .get(uri)
+            ).map(response -> {
+                XmlReader reader = new XmlReader(response.getBody().getInputStream());
+                SyndFeedInput input = new SyndFeedInput();
+                return input.build(reader);
             });
     }
-
 }
