@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Read</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <span>{{ flux.title }}</span>
+    <div class="subhead">{{ flux.subtitle }}</div>
+</header>
+
+<main class="content">
+    <div class="columns">
+        {% for article in flux.articles %}
+        <article class="column">
+            <header>
+                {{ article.title }}
+                <div class="subhead">{{ article.subtitle }}</div>
+            </header>
+            {% autoescape false %}
+            {{ article.content }}
+            {% endautoescape %}
+        </article>
+        {% endfor %}
+    </div>
+</main>
+
+</body>
+</html>
