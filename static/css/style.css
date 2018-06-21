@@ -257,15 +257,10 @@ p {
 }
 
 .media, img, iframe {
-    -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
-    filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+    filter: brightness(1.5) contrast(2) grayscale(1);
+    /*-webkit-filter: sepia(80%) contrast(1) opacity(0.8);*/
+    /*filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);*/
     mix-blend-mode: multiply;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-}
-
-iframe {
     max-width: 100%;
     width: auto;
     height: auto;

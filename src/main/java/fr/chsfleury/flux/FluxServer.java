@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 public class FluxServer {
 
     /*
-     * https://korben.info/feed
+     * https://korben.info/feed > "main > article > div.entry-container"
      * https://www.lesnumeriques.com/rss.xml
      */
 
