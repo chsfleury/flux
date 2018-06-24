@@ -41,6 +41,7 @@
         <rome.version>1.10.0</rome.version>
         <jsoup.version>1.11.3</jsoup.version>
         <jooq.version>3.11.1</jooq.version>
+        <hikari.version>3.2.0</hikari.version>
         <h2.version>1.4.197</h2.version>
         <lombok.version>1.16.18</lombok.version>
         <guava.version>23.0</guava.version>
@@ -89,6 +90,11 @@
             <groupId>org.jooq</groupId>
             <artifactId>jooq</artifactId>
             <version>${jooq.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${hikari.version}</version>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>

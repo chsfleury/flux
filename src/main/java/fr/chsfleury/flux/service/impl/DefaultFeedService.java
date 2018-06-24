@@ -19,8 +19,11 @@ import ratpack.http.client.HttpClient;
 
 import java.net.URI;
 import java.util.List;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 import static com.google.common.base.Strings.isNullOrEmpty;
+import static java.util.concurrent.Executors.newSingleThreadScheduledExecutor;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
@@ -34,14 +37,18 @@ public class DefaultFeedService implements FeedService {
     private final HttpClient http;
     private final FeedRepository feedRepository;
     private final ArticleRepository articleRepository;
+    private final ScheduledExecutorService scheduler;
 
     public DefaultFeedService(final HttpClient http, final FeedRepository feedRepository, final ArticleRepository articleRepository) {
         this.http = http;
         this.feedRepository = feedRepository;
         this.articleRepository = articleRepository;
+        this.scheduler = newSingleThreadScheduledExecutor();
+        scheduler.scheduleWithFixedDelay(this::scan, 0, 1, TimeUnit.HOURS);
     }
 
     public void scan() {
+        log.info("begin scan.");
         long feeds = feedRepository.findReadyToScan()
                 .parallelStream()
                 .peek(this::scan)
