@@ -8,6 +8,26 @@
     <artifactId>flux</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>Flux</name>
+    <description>No more ads or partial content in rss feed</description>
+
+    <developers>
+        <developer>
+            <id>chsfleury</id>
+            <name>Charles Fleury</name>
+            <roles>
+                <role>Project founder</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
     <properties>
 
         <!--PARAMS-->
@@ -15,27 +35,65 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <!--DEPENDENCIES-->
+        <ratpack.version>1.5.4</ratpack.version>
+        <pebble.version>2.6.1</pebble.version>
+        <rome.version>1.10.0</rome.version>
+        <jsoup.version>1.11.3</jsoup.version>
+        <jooq.version>3.11.1</jooq.version>
+        <h2.version>1.4.197</h2.version>
+        <lombok.version>1.16.18</lombok.version>
         <guava.version>23.0</guava.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <logback.version>1.2.3</logback.version>
+
+        <!--PLUGINS-->
+        <compiler.plugin.version>3.7.0</compiler.plugin.version>
+
+        <!--DATABASE-->
+        <db.url>jdbc:h2:./fluxdb</db.url>
+        <db.username>sa</db.username>
 
     </properties>
 
     <dependencies>
+
+        <!--WEB-->
         <dependency>
             <groupId>io.ratpack</groupId>
             <artifactId>ratpack-core</artifactId>
-            <version>1.5.4</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.rometools</groupId>
-            <artifactId>rome</artifactId>
-            <version>1.10.0</version>
+            <version>${ratpack.version}</version>
         </dependency>
 
         <dependency>
             <groupId>io.pebbletemplates</groupId>
             <artifactId>pebble</artifactId>
-            <version>2.6.1</version>
+            <version>${pebble.version}</version>
+        </dependency>
+
+        <!--RSS ATOM FEED-->
+        <dependency>
+            <groupId>com.rometools</groupId>
+            <artifactId>rome</artifactId>
+            <version>${rome.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>${jsoup.version}</version>
+        </dependency>
+
+
+        <!--DATABASE-->
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+            <version>${jooq.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
         </dependency>
 
         <dependency>
@@ -44,28 +102,22 @@
             <version>${guava.version}</version>
         </dependency>
 
-        <!--<dependency>-->
-        <!--<groupId>org.apache.commons</groupId>-->
-        <!--<artifactId>commons-text</artifactId>-->
-        <!--<version>1.4</version>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.18</version>
+            <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
+            <version>${logback.version}</version>
         </dependency>
 
     </dependencies>
@@ -75,9 +127,78 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.plugin.version}</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>5.1.1</version>
+
+                <!-- Note that we're executing the Flyway plugin in the "generate-sources" phase -->
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>migrate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <!-- Note that we need to prefix the db/migration
+                     path with filesystem: to prevent Flyway
+                     from looking for our migration scripts
+                     only on the classpath -->
+                <configuration>
+                    <url>${db.url}</url>
+                    <user>${db.username}</user>
+                    <locations>
+                        <location>filesystem:src/main/resources/db/migration</location>
+                    </locations>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jooq</groupId>
+                <artifactId>jooq-codegen-maven</artifactId>
+                <version>${jooq.version}</version>
+
+                <!-- The jOOQ code generation plugin is also
+                     executed in the generate-sources phase,
+                     prior to compilation -->
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <!-- This is a minimal working configuration.
+                     See the manual's section about the code
+                     generator for more details -->
+                <configuration>
+                    <jdbc>
+                        <url>${db.url}</url>
+                        <user>${db.username}</user>
+                    </jdbc>
+                    <generator>
+                        <database>
+                            <includes>.*</includes>
+                            <inputSchema>FLUXDB</inputSchema>
+                        </database>
+                        <target>
+                            <packageName>fr.chsfleury.flux.domain.generated</packageName>
+                            <directory>target/generated-sources/jooq</directory>
+                        </target>
+
+                        <generate>
+                            <fluentSetters>true</fluentSetters>
+                        </generate>
+                    </generator>
                 </configuration>
             </plugin>
         </plugins>

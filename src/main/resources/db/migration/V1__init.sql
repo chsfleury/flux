@@ -1,0 +1,3 @@
+DROP SCHEMA fluxdb IF EXISTS;
+
+CREATE SCHEMA fluxdb;

@@ -1,4 +1,4 @@
-package fr.chsfleury.flux;
+package fr.chsfleury.flux.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
