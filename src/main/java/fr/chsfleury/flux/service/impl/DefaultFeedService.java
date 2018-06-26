@@ -10,7 +10,9 @@ import fr.chsfleury.flux.domain.generated.tables.records.ArticleRecord;
 import fr.chsfleury.flux.domain.generated.tables.records.FeedRecord;
 import fr.chsfleury.flux.domain.repository.ArticleRepository;
 import fr.chsfleury.flux.domain.repository.FeedRepository;
+import fr.chsfleury.flux.dto.Article;
 import fr.chsfleury.flux.dto.FeedInput;
+import fr.chsfleury.flux.dto.Flux;
 import fr.chsfleury.flux.service.FeedService;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
@@ -23,6 +25,7 @@ import java.net.URI;
 import java.util.List;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import static com.google.common.base.Strings.isNullOrEmpty;
 import static java.util.concurrent.Executors.newSingleThreadScheduledExecutor;
@@ -36,26 +39,51 @@ import static java.util.stream.Collectors.toList;
 @Slf4j
 public class DefaultFeedService implements FeedService {
 
-    private final HttpClient http;
+    private HttpClient http;
     private final FeedRepository feedRepository;
     private final ArticleRepository articleRepository;
     private final ScheduledExecutorService scheduler;
 
-    public DefaultFeedService(final HttpClient http, final FeedRepository feedRepository, final ArticleRepository articleRepository) {
+    public DefaultFeedService(HttpClient http, final FeedRepository feedRepository, final ArticleRepository articleRepository) {
         this.http = http;
         this.feedRepository = feedRepository;
         this.articleRepository = articleRepository;
         this.scheduler = newSingleThreadScheduledExecutor();
-        scheduler.scheduleWithFixedDelay(this::scan, 0, 1, TimeUnit.HOURS);
+        this.scheduler.scheduleWithFixedDelay(this::scan, 0, 1, TimeUnit.HOURS);
     }
 
     public int add(FeedInput input) {
-        FeedRecord feedRecord = input.toRecord();
+
+        FeedRecord feedRecord = new FeedRecord()
+                .setTitle(input.getTitle())
+                .setUrl(input.getUrl())
+                .setSelector(input.getSelector())
+                .setPrefix(input.getPrefix())
+                .setSuffix(input.getSuffix());
+
         return feedRepository.insert(feedRecord.setNextScan(Time.timestamp()));
+
     }
 
     public int remove(String url) {
         return feedRepository.delete(url);
+    }
+
+    @Override
+    public Flux convert(SyndFeed syndFeed) {
+        Flux flux = new Flux(syndFeed.getTitle(), syndFeed.getDescription());
+
+        for (SyndEntry entry : syndFeed.getEntries()) {
+            Article article = new Article(
+                    entry.getTitle(),
+                    entry.getAuthor(),
+                    entry.getContents().get(0).getValue(),
+                    entry.getCategories().stream().map(SyndCategory::getName).collect(Collectors.toList())
+            );
+            flux.getArticles().add(article);
+        }
+
+        return flux;
     }
 
     private void scan() {
