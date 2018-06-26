@@ -7,6 +7,8 @@ import fr.chsfleury.flux.domain.repository.ArticleRepository;
 import fr.chsfleury.flux.domain.repository.FeedRepository;
 import fr.chsfleury.flux.domain.repository.impl.ArticleJooqRepository;
 import fr.chsfleury.flux.domain.repository.impl.FeedJooqRepository;
+import fr.chsfleury.flux.service.FeedService;
+import fr.chsfleury.flux.service.impl.DefaultFeedService;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.jooq.DSLContext;
@@ -74,7 +76,6 @@ public class ContextLoader implements Action<RatpackServerSpec> {
     }
 
     private void registerServices(RegistrySpec r) {
-
-
+        FeedService feedService = new DefaultFeedService()
     }
 }

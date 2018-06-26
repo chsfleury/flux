@@ -5,10 +5,12 @@ import com.rometools.rome.feed.synd.SyndEntry;
 import com.rometools.rome.feed.synd.SyndFeed;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
+import fr.chsfleury.flux.core.Time;
 import fr.chsfleury.flux.domain.generated.tables.records.ArticleRecord;
 import fr.chsfleury.flux.domain.generated.tables.records.FeedRecord;
 import fr.chsfleury.flux.domain.repository.ArticleRepository;
 import fr.chsfleury.flux.domain.repository.FeedRepository;
+import fr.chsfleury.flux.dto.FeedInput;
 import fr.chsfleury.flux.service.FeedService;
 import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
@@ -47,7 +49,16 @@ public class DefaultFeedService implements FeedService {
         scheduler.scheduleWithFixedDelay(this::scan, 0, 1, TimeUnit.HOURS);
     }
 
-    public void scan() {
+    public int add(FeedInput input) {
+        FeedRecord feedRecord = input.toRecord();
+        return feedRepository.insert(feedRecord.setNextScan(Time.timestamp()));
+    }
+
+    public int remove(String url) {
+        return feedRepository.delete(url);
+    }
+
+    private void scan() {
         log.info("begin scan.");
         long feeds = feedRepository.findReadyToScan()
                 .parallelStream()
@@ -128,6 +139,10 @@ public class DefaultFeedService implements FeedService {
         return categories.stream()
                 .map(SyndCategory::getName)
                 .collect(joining(", "));
+    }
+
+    public void close() {
+        scheduler.shutdown();
     }
 
 }

@@ -43,4 +43,12 @@ public class FeedJooqRepository extends AbstractJooqRepository implements FeedRe
         return insert.execute();
     }
 
+    @Override
+    public int delete(final String feedUrl) {
+        return jooq
+            .delete(FEED)
+            .where(FEED.URL.eq(feedUrl))
+            .execute();
+    }
+
 }

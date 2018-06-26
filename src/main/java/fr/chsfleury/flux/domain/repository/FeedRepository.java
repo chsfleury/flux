@@ -16,4 +16,6 @@ public interface FeedRepository {
 
     int insert(FeedRecord record);
 
+    int delete(String feedUrl);
+
 }
