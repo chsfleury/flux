@@ -14,22 +14,21 @@ import fr.chsfleury.flux.dto.Article;
 import fr.chsfleury.flux.dto.FeedInput;
 import fr.chsfleury.flux.dto.Flux;
 import fr.chsfleury.flux.service.FeedService;
+import io.vavr.concurrent.Future;
 import lombok.extern.slf4j.Slf4j;
 import org.asynchttpclient.AsyncHttpClient;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import ratpack.exec.Promise;
-import ratpack.exec.util.ParallelBatch;
 
-import java.net.URI;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static com.google.common.base.Strings.isNullOrEmpty;
-import static java.util.concurrent.CompletableFuture.completedFuture;
+import static io.vavr.concurrent.Future.fromJavaFuture;
+import static io.vavr.concurrent.Future.sequence;
+import static io.vavr.concurrent.Future.successful;
 import static java.util.concurrent.Executors.newSingleThreadScheduledExecutor;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
@@ -93,48 +92,45 @@ public class DefaultFeedService implements FeedService {
     private void scan() {
         List<FeedRecord> feedsToScan = feedRepository.findReadyToScan();
         log.info("scanning {} feed(s)", feedsToScan.size());
-        feedsToScan.parallelStream().map()
-        ParallelBatch.of(feedsToScan.stream().map(this::scan).collect(toList())).yield()
-        feedsToScan.forEach(this::scan);
+        List<Future<Integer>> tasks = feedsToScan.parallelStream()
+                .map(this::scan)
+                .collect(toList());
+
+        int articles = sequence(tasks)
+                .map(counters -> counters.sum().intValue())
+                .get();
+
+        log.info("{} new articles", articles);
     }
 
-    private Promise<List<ArticleRecord>> scan(FeedRecord record) {
-        return Promise
-                .sync(() -> {
-                    log.info("scan {} -> {}", record.getTitle(), record.getUrl());
-                    return new URI(record.getUrl());
-                })
-                .flatMap(http::get)
-                .flatMap(response -> {
-                    XmlReader reader = new XmlReader(response.getBody().getInputStream());
+    private Future<Integer> scan(FeedRecord record) {
+        log.info("scan {} -> {}", record.getTitle(), record.getUrl());
+        return fromJavaFuture(http.prepareGet(record.getUrl()).execute())
+                .flatMapTry(response -> {
+                    XmlReader reader = new XmlReader(response.getResponseBodyAsStream());
                     SyndFeedInput input = new SyndFeedInput();
                     SyndFeed feed = input.build(reader);
 
-                    ParallelBatch<ArticleRecord> batch = ParallelBatch.of(
-                            feed.getEntries().stream()
-                                    .map(entry -> createArticle(record.getUrl(), entry))
-                                    .map(article -> improveContent(article, record.getSelector(), record.getPrefix(), record.getSuffix()))
-                                    .collect(toList())
-                    );
+                    List<Future<ArticleRecord>> articles = feed.getEntries().stream()
+                            .map(entry -> createArticle(record.getUrl(), entry))
+                            .map(article -> improveContent(article, record.getSelector(), record.getPrefix(), record.getSuffix()))
+                            .collect(toList());
 
-                    return batch.yield();
+                    return sequence(articles);
                 })
-                .next(articles -> {
-                    int saved = articleRepository.insert(articles);
-                    if (saved > 0) {
-                        log.info("{} articles saved", saved);
-                    }
+                .map(articleRepository::insert)
+                .peek(i -> {
+                    //TODO UPDATE FEED RECORD NEXT SCAN
                 });
     }
 
-    private CompletableFuture<ArticleRecord> improveContent(ArticleRecord record, String selector, String prefix, String suffix) {
-        CompletableFuture<String> content;
+    private Future<ArticleRecord> improveContent(ArticleRecord record, String selector, String prefix, String suffix) {
+        Future<String> content;
         if (isNullOrEmpty(selector)) {
-            content = completedFuture(record.getContent());
+            content = successful(record.getContent());
         } else {
-            content = Promise.sync(() -> new URI(record.getUrl()))
-                    .flatMap(http::get)
-                    .map(response -> selectHtml(response.getBody().getText(), selector));
+            content = fromJavaFuture(http.prepareGet(record.getUrl()).execute())
+                    .map(response -> selectHtml(response.getResponseBody(), selector));
         }
 
         if (!isNullOrEmpty(prefix)) {
