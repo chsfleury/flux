@@ -46,6 +46,7 @@
         <hikari.version>3.2.0</hikari.version>
         <h2.version>1.4.197</h2.version>
         <lombok.version>1.16.18</lombok.version>
+        <vavr.version>0.9.2</vavr.version>
         <guava.version>23.0</guava.version>
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
@@ -117,6 +118,11 @@
             <version>${kotlin.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>${vavr.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
