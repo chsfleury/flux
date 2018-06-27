@@ -15,19 +15,21 @@ import fr.chsfleury.flux.dto.FeedInput;
 import fr.chsfleury.flux.dto.Flux;
 import fr.chsfleury.flux.service.FeedService;
 import lombok.extern.slf4j.Slf4j;
+import org.asynchttpclient.AsyncHttpClient;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import ratpack.exec.Promise;
 import ratpack.exec.util.ParallelBatch;
-import ratpack.http.client.HttpClient;
 
 import java.net.URI;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static com.google.common.base.Strings.isNullOrEmpty;
+import static java.util.concurrent.CompletableFuture.completedFuture;
 import static java.util.concurrent.Executors.newSingleThreadScheduledExecutor;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
@@ -39,12 +41,12 @@ import static java.util.stream.Collectors.toList;
 @Slf4j
 public class DefaultFeedService implements FeedService {
 
-    private HttpClient http;
+    private AsyncHttpClient http;
     private final FeedRepository feedRepository;
     private final ArticleRepository articleRepository;
     private final ScheduledExecutorService scheduler;
 
-    public DefaultFeedService(HttpClient http, final FeedRepository feedRepository, final ArticleRepository articleRepository) {
+    public DefaultFeedService(AsyncHttpClient http, final FeedRepository feedRepository, final ArticleRepository articleRepository) {
         this.http = http;
         this.feedRepository = feedRepository;
         this.articleRepository = articleRepository;
@@ -61,11 +63,13 @@ public class DefaultFeedService implements FeedService {
                 .setPrefix(input.getPrefix())
                 .setSuffix(input.getSuffix());
 
+        log.info("add feed {} -> {}", input.getTitle(), input.getUrl());
         return feedRepository.insert(feedRecord.setNextScan(Time.timestamp()));
 
     }
 
     public int remove(String url) {
+        log.info("remove feed {}", url);
         return feedRepository.delete(url);
     }
 
@@ -87,18 +91,19 @@ public class DefaultFeedService implements FeedService {
     }
 
     private void scan() {
-        log.info("begin scan.");
-        long feeds = feedRepository.findReadyToScan()
-                .parallelStream()
-                .peek(this::scan)
-                .count();
-
-        log.info("{} feeds scanned.", feeds);
+        List<FeedRecord> feedsToScan = feedRepository.findReadyToScan();
+        log.info("scanning {} feed(s)", feedsToScan.size());
+        feedsToScan.parallelStream().map()
+        ParallelBatch.of(feedsToScan.stream().map(this::scan).collect(toList())).yield()
+        feedsToScan.forEach(this::scan);
     }
 
-    private void scan(FeedRecord record) {
-        Promise
-                .sync(() -> new URI(record.getUrl()))
+    private Promise<List<ArticleRecord>> scan(FeedRecord record) {
+        return Promise
+                .sync(() -> {
+                    log.info("scan {} -> {}", record.getTitle(), record.getUrl());
+                    return new URI(record.getUrl());
+                })
                 .flatMap(http::get)
                 .flatMap(response -> {
                     XmlReader reader = new XmlReader(response.getBody().getInputStream());
@@ -114,13 +119,18 @@ public class DefaultFeedService implements FeedService {
 
                     return batch.yield();
                 })
-                .then(articleRepository::insert);
+                .next(articles -> {
+                    int saved = articleRepository.insert(articles);
+                    if (saved > 0) {
+                        log.info("{} articles saved", saved);
+                    }
+                });
     }
 
-    private Promise<ArticleRecord> improveContent(ArticleRecord record, String selector, String prefix, String suffix) {
-        Promise<String> content;
+    private CompletableFuture<ArticleRecord> improveContent(ArticleRecord record, String selector, String prefix, String suffix) {
+        CompletableFuture<String> content;
         if (isNullOrEmpty(selector)) {
-            content = Promise.value(record.getContent());
+            content = completedFuture(record.getContent());
         } else {
             content = Promise.sync(() -> new URI(record.getUrl()))
                     .flatMap(http::get)

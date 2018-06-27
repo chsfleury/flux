@@ -161,3 +161,4 @@ scripts/**
 scripts
 
 *.db
+*.log.gz

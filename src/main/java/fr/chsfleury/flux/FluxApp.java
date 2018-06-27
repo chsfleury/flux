@@ -12,12 +12,12 @@ import fr.chsfleury.flux.domain.repository.impl.ArticleJooqRepository;
 import fr.chsfleury.flux.domain.repository.impl.FeedJooqRepository;
 import fr.chsfleury.flux.service.FeedService;
 import fr.chsfleury.flux.service.impl.DefaultFeedService;
-import io.netty.buffer.PooledByteBufAllocator;
 import lombok.Getter;
+import org.asynchttpclient.AsyncHttpClient;
+import org.asynchttpclient.Dsl;
 import org.jooq.DSLContext;
 import org.jooq.SQLDialect;
 import org.jooq.impl.DefaultDSLContext;
-import ratpack.http.client.HttpClient;
 import ratpack.registry.RegistrySpec;
 import ratpack.server.RatpackServer;
 import ratpack.server.ServerConfigBuilder;
@@ -88,11 +88,7 @@ class FluxApp {
         ArticleRepository articleRepository = new ArticleJooqRepository(jooq);
         r.add(ArticleRepository.class, articleRepository);
 
-        HttpClient http = HttpClient.of(s -> s
-                .poolSize(0)
-                .byteBufAllocator(PooledByteBufAllocator.DEFAULT)
-                .maxContentLength(Integer.MAX_VALUE)
-        );
+        AsyncHttpClient http = Dsl.asyncHttpClient();
 
         FeedService feedService = new DefaultFeedService(http, feedRepository, articleRepository);
         r.add(FeedService.class, feedService);
