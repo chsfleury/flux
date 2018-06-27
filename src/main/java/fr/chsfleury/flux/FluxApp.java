@@ -3,6 +3,7 @@ package fr.chsfleury.flux;
 import com.mitchellbosecke.pebble.PebbleEngine;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import fr.chsfleury.flux.controllers.AddController;
 import fr.chsfleury.flux.controllers.HomeController;
 import fr.chsfleury.flux.controllers.ReadController;
 import fr.chsfleury.flux.domain.repository.ArticleRepository;
@@ -38,14 +39,16 @@ class FluxApp {
 
     protected void start() throws Exception {
         RatpackServer.start(serverSpec ->
-                serverSpec
-                        .serverConfig(config -> registerConfig(config, Paths.get(System.getProperty("user.dir"))))
-                        .registryOf(this::registerBeans)
-                        .handlers(chain ->
-                                chain
-                                        .files()
-                                        .get(HomeController::get)
-                                        .get("direct_read", ReadController::get))
+            serverSpec
+                .serverConfig(config -> registerConfig(config, Paths.get(System.getProperty("user.dir"))))
+                .registryOf(this::registerBeans)
+                .handlers(chain ->
+                    chain
+                        .files()
+                        .get(HomeController::get)
+                        .get("direct_read", ReadController::get)
+                        .get("add", AddController::get)
+                )
         );
     }
 
