@@ -20,10 +20,11 @@ public class ArticleJooqRepository extends AbstractJooqRepository implements Art
     }
 
     @Override
-    public List<ArticleRecord> findByFlux(final String fluxUrl) {
+    public List<ArticleRecord> findByFlux(final String fluxUrl, int limit) {
         return jooq
                 .selectFrom(ARTICLE)
                 .where(ARTICLE.FLUX_URL.eq(fluxUrl))
+                .limit(limit)
                 .fetch();
     }
 

@@ -7,6 +7,7 @@ import org.jooq.InsertQuery;
 import org.jooq.impl.DSL;
 
 import java.util.List;
+import java.util.Optional;
 
 import static fr.chsfleury.flux.domain.generated.tables.Feed.FEED;
 
@@ -36,6 +37,14 @@ public class FeedJooqRepository extends AbstractJooqRepository implements FeedRe
     }
 
     @Override
+    public Optional<FeedRecord> find(final String name) {
+        return jooq
+                .selectFrom(FEED)
+                .where(FEED.NAME.eq(name))
+                .fetchOptional();
+    }
+
+    @Override
     public int insert(final FeedRecord record) {
         InsertQuery<FeedRecord> insert = jooq.insertQuery(FEED);
         insert.onDuplicateKeyIgnore(true);
@@ -49,6 +58,10 @@ public class FeedJooqRepository extends AbstractJooqRepository implements FeedRe
             .delete(FEED)
             .where(FEED.URL.eq(feedUrl))
             .execute();
+    }
+
+    public int update(FeedRecord record) {
+        return jooq.executeUpdate(record);
     }
 
 }

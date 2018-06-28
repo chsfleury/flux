@@ -4,6 +4,7 @@ import com.mitchellbosecke.pebble.PebbleEngine;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import fr.chsfleury.flux.controllers.AddController;
+import fr.chsfleury.flux.controllers.DirectReadController;
 import fr.chsfleury.flux.controllers.HomeController;
 import fr.chsfleury.flux.controllers.ReadController;
 import fr.chsfleury.flux.domain.repository.ArticleRepository;
@@ -46,7 +47,8 @@ class FluxApp {
                     chain
                         .files()
                         .get(HomeController::get)
-                        .get("direct_read", ReadController::get)
+                            .get("direct_read", DirectReadController::get)
+                            .get("read", ReadController::get)
                         .get("add", AddController::get)
                 )
         );

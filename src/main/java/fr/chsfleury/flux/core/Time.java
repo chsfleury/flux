@@ -8,4 +8,8 @@ public class Time {
         return new Timestamp(System.currentTimeMillis());
     }
 
+    public static Timestamp inOneHour() {
+        return new Timestamp(System.currentTimeMillis() + 3_600_000);
+    }
+
 }

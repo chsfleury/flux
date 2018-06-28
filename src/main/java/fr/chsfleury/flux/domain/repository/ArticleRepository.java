@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface ArticleRepository {
 
-    List<ArticleRecord> findByFlux(String fluxUrl);
+    List<ArticleRecord> findByFlux(String fluxUrl, int limit);
 
     int insert(Iterable<ArticleRecord> records);
 

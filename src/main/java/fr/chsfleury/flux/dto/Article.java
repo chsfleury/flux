@@ -10,7 +10,10 @@ import java.util.List;
 public class Article {
 
     private String title;
-    private String subtitle;
+    private String url;
+    private String fluxUrl;
+    private String author;
+    private String description;
     private String content;
     private List<String> tags;
 

@@ -25,8 +25,7 @@ public class AddController {
                 .yaml(wrap(response.getBody().getBytes()))
                 .build();
             FeedInput input = configData.get(FeedInput.class);
-            int rows = ctx.get(FeedService.class).add(input);
-            return rows == 1 ? "ok" : "ko";
+            return ctx.get(FeedService.class).add(input).get() == 1 ? "ok" : "ko";
         })
             .then(ctx::render);
     }

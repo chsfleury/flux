@@ -1,50 +1,86 @@
 package fr.chsfleury.flux.controllers;
 
-import com.google.common.collect.ImmutableMap;
-import com.mitchellbosecke.pebble.PebbleEngine;
-import com.rometools.rome.feed.synd.SyndFeed;
-import com.rometools.rome.io.SyndFeedInput;
-import com.rometools.rome.io.XmlReader;
+import com.rometools.rome.feed.synd.SyndCategory;
+import com.rometools.rome.feed.synd.SyndCategoryImpl;
+import com.rometools.rome.feed.synd.SyndContentImpl;
+import com.rometools.rome.feed.synd.SyndEntry;
+import com.rometools.rome.feed.synd.SyndEntryImpl;
+import com.rometools.rome.feed.synd.SyndFeedImpl;
+import com.rometools.rome.io.SyndFeedOutput;
+import fr.chsfleury.flux.dto.Article;
+import fr.chsfleury.flux.dto.Flux;
 import fr.chsfleury.flux.service.FeedService;
 import lombok.val;
 import ratpack.exec.Promise;
 import ratpack.handling.Context;
-import ratpack.http.MediaType;
-import ratpack.http.client.HttpClient;
+import ratpack.util.MultiValueMap;
 
-import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
-import static fr.chsfleury.flux.controllers.ControllerUtils.renderTemplate;
+import static java.util.Collections.singletonList;
 
 /**
  * @author Charles Fleury
- * @since 27/06/18.
+ * @since 28/06/18.
  */
 public class ReadController {
 
-    public static void get(Context ctx) {
-        val template = ctx.get(PebbleEngine.class).getTemplate("static/read.html");
-        val feedService = ctx.get(FeedService.class);
-        doRead(ctx)
-                .flatMap(feed -> renderTemplate(template, ImmutableMap.of("flux", feedService.convert(feed))))
-                .mapError(ControllerUtils::renderError)
-                .then(html -> ctx
-                        .getResponse()
-                        .send(MediaType.TEXT_HTML, html.getBytes())
-                );
-    }
+    private static SyndFeedOutput output = new SyndFeedOutput();
 
-    private static Promise<SyndFeed> doRead(Context ctx) {
-        return Promise
-                .sync(() -> new URI(ctx.getRequest().getQueryParams().get("flux")))
-                .flatMap(uri -> ctx
-                        .get(HttpClient.class)
-                        .get(uri)
-                ).map(response -> {
-                    XmlReader reader = new XmlReader(response.getBody().getInputStream());
-                    SyndFeedInput input = new SyndFeedInput();
-                    return input.build(reader);
-                });
+    public static void get(Context ctx) {
+        val feedService = ctx.get(FeedService.class);
+        MultiValueMap<String, String> queryParams = ctx.getRequest().getQueryParams();
+        String name = queryParams.get("name");
+        String limitParam = queryParams.getOrDefault("limit", "20");
+        int limit;
+        try {
+            limit = Integer.valueOf(limitParam);
+        } catch (NumberFormatException e) {
+            limit = 20;
+        }
+
+        Optional<Flux> optFlux = feedService.get(name, limit);
+        if (optFlux.isPresent()) {
+            Flux flux = optFlux.get();
+            SyndFeedImpl feed = new SyndFeedImpl();
+            feed.setFeedType("atom_1.0");
+            feed.setTitle(flux.getTitle());
+            feed.setDescription(flux.getDescription());
+
+            List<SyndEntry> entries = new ArrayList<>();
+
+            for (Article article : flux.getArticles()) {
+                SyndEntryImpl entry = new SyndEntryImpl();
+                entry.setTitle(article.getTitle());
+
+                SyndContentImpl content = new SyndContentImpl();
+                content.setValue(article.getContent());
+                entry.setContents(singletonList(content));
+
+                entry.setAuthor(article.getAuthor());
+                entry.setUri(article.getUrl());
+
+                List<SyndCategory> categories = new ArrayList<>();
+
+                for (String tag : article.getTags()) {
+                    SyndCategoryImpl category = new SyndCategoryImpl();
+                    category.setName(tag);
+                }
+
+                entry.setCategories(categories);
+                entries.add(entry);
+            }
+
+            feed.setEntries(entries);
+
+            ctx.render(
+                    Promise.sync(() -> output.outputString(feed))
+                            .mapError(Throwable::getMessage)
+            );
+        }
+
     }
 
 }

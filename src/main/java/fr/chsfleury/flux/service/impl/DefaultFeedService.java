@@ -1,8 +1,10 @@
 package fr.chsfleury.flux.service.impl;
 
+import com.google.common.base.Splitter;
 import com.rometools.rome.feed.synd.SyndCategory;
 import com.rometools.rome.feed.synd.SyndEntry;
 import com.rometools.rome.feed.synd.SyndFeed;
+import com.rometools.rome.io.FeedException;
 import com.rometools.rome.io.SyndFeedInput;
 import com.rometools.rome.io.XmlReader;
 import fr.chsfleury.flux.core.Time;
@@ -17,15 +19,19 @@ import fr.chsfleury.flux.service.FeedService;
 import io.vavr.concurrent.Future;
 import lombok.extern.slf4j.Slf4j;
 import org.asynchttpclient.AsyncHttpClient;
+import org.asynchttpclient.Response;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static com.google.common.base.Strings.isNullOrEmpty;
+import static fr.chsfleury.flux.core.Time.inOneHour;
 import static io.vavr.concurrent.Future.fromJavaFuture;
 import static io.vavr.concurrent.Future.sequence;
 import static io.vavr.concurrent.Future.successful;
@@ -40,6 +46,8 @@ import static java.util.stream.Collectors.toList;
 @Slf4j
 public class DefaultFeedService implements FeedService {
 
+    private static final Splitter COMMA_SPLITTER = Splitter.on(", ").omitEmptyStrings().trimResults();
+
     private AsyncHttpClient http;
     private final FeedRepository feedRepository;
     private final ArticleRepository articleRepository;
@@ -53,18 +61,24 @@ public class DefaultFeedService implements FeedService {
         this.scheduler.scheduleWithFixedDelay(this::scan, 0, 1, TimeUnit.HOURS);
     }
 
-    public int add(FeedInput input) {
+    public Future<Integer> add(FeedInput input) {
 
         FeedRecord feedRecord = new FeedRecord()
-                .setTitle(input.getTitle())
+                .setName(input.getName())
                 .setUrl(input.getUrl())
                 .setSelector(input.getSelector())
                 .setPrefix(input.getPrefix())
                 .setSuffix(input.getSuffix());
 
-        log.info("add feed {} -> {}", input.getTitle(), input.getUrl());
-        return feedRepository.insert(feedRecord.setNextScan(Time.timestamp()));
+        return toFeed(input.getUrl())
+                .map(feed -> {
+                    feedRecord
+                            .setTitle(feed.getTitle())
+                            .setDescription(feed.getDescription());
 
+                    log.info("add feed {} -> {}", input.getName(), input.getUrl());
+                    return feedRepository.insert(feedRecord.setNextScan(Time.timestamp()));
+                });
     }
 
     public int remove(String url) {
@@ -74,12 +88,15 @@ public class DefaultFeedService implements FeedService {
 
     @Override
     public Flux convert(SyndFeed syndFeed) {
-        Flux flux = new Flux(syndFeed.getTitle(), syndFeed.getDescription());
+        Flux flux = new Flux(syndFeed.getTitle(), syndFeed.getDescription(), syndFeed.getUri());
 
         for (SyndEntry entry : syndFeed.getEntries()) {
             Article article = new Article(
                     entry.getTitle(),
+                    entry.getUri(),
+                    syndFeed.getUri(),
                     entry.getAuthor(),
+                    entry.getDescription().getValue(),
                     entry.getContents().get(0).getValue(),
                     entry.getCategories().stream().map(SyndCategory::getName).collect(Collectors.toList())
             );
@@ -87,6 +104,28 @@ public class DefaultFeedService implements FeedService {
         }
 
         return flux;
+    }
+
+    @Override
+    public Optional<Flux> get(final String name, final int limit) {
+        return feedRepository.find(name)
+                .map(feedRecord -> {
+                    Flux flux = new Flux(feedRecord.getTitle(), feedRecord.getDescription(), feedRecord.getUrl());
+                    for (ArticleRecord articleRecord : articleRepository.findByFlux(feedRecord.getUrl(), limit)) {
+                        Article article = new Article(
+                                articleRecord.getTitle(),
+                                articleRecord.getUrl(),
+                                feedRecord.getUrl(),
+                                articleRecord.getAuthor(),
+                                articleRecord.getDescription(),
+                                articleRecord.getContent(),
+                                COMMA_SPLITTER.splitToList(articleRecord.getTags())
+                        );
+
+                        flux.getArticles().add(article);
+                    }
+                    return flux;
+                });
     }
 
     private void scan() {
@@ -105,11 +144,11 @@ public class DefaultFeedService implements FeedService {
 
     private Future<Integer> scan(FeedRecord record) {
         log.info("scan {} -> {}", record.getTitle(), record.getUrl());
-        return fromJavaFuture(http.prepareGet(record.getUrl()).execute())
-                .flatMapTry(response -> {
-                    XmlReader reader = new XmlReader(response.getResponseBodyAsStream());
-                    SyndFeedInput input = new SyndFeedInput();
-                    SyndFeed feed = input.build(reader);
+        return toFeed(record.getUrl())
+                .flatMapTry(feed -> {
+                    if (!record.getTitle().equals(feed.getTitle())) {
+                        record.setTitle(feed.getTitle());
+                    }
 
                     List<Future<ArticleRecord>> articles = feed.getEntries().stream()
                             .map(entry -> createArticle(record.getUrl(), entry))
@@ -119,9 +158,18 @@ public class DefaultFeedService implements FeedService {
                     return sequence(articles);
                 })
                 .map(articleRepository::insert)
-                .peek(i -> {
-                    //TODO UPDATE FEED RECORD NEXT SCAN
-                });
+                .peek(i -> feedRepository.update(record.setNextScan(inOneHour())));
+    }
+
+    private Future<SyndFeed> toFeed(String url) {
+        return fromJavaFuture(http.prepareGet(url).execute())
+                .mapTry(this::toFeed);
+    }
+
+    private SyndFeed toFeed(Response response) throws IOException, FeedException {
+        XmlReader reader = new XmlReader(response.getResponseBodyAsStream());
+        SyndFeedInput input = new SyndFeedInput();
+        return input.build(reader);
     }
 
     private Future<ArticleRecord> improveContent(ArticleRecord record, String selector, String prefix, String suffix) {
@@ -163,6 +211,7 @@ public class DefaultFeedService implements FeedService {
         return new ArticleRecord()
                 .setFluxUrl(fluxUrl)
                 .setTitle(entry.getTitle())
+                .setDescription(entry.getDescription().getValue())
                 .setAuthor(entry.getAuthor())
                 .setUrl(entry.getLink())
                 .setContent(entry.getContents().get(0).getValue())
