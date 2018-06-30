@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import static fr.chsfleury.flux.controllers.ControllerUtils.renderError;
 import static java.util.Collections.singletonList;
 
 /**
@@ -30,6 +31,26 @@ public class ReadController {
     private static SyndFeedOutput output = new SyndFeedOutput();
 
     public static void get(Context ctx) {
+        try {
+            ctx.byContent(contentSpec -> contentSpec
+                    .unspecified(ReadController::getAtom)
+                    .type("application/atom+xml", ReadController::getAtom)
+                    .type("application/rss+xml", ReadController::getRss)
+            );
+        } catch (Exception e) {
+            ctx.render(renderError(e));
+        }
+    }
+
+    private static void getRss(Context ctx) {
+        getXml(ctx, "rss_1.0");
+    }
+
+    private static void getAtom(Context ctx) {
+        getXml(ctx, "atom_1.0");
+    }
+
+    private static void getXml(Context ctx, String feedType) {
         val feedService = ctx.get(FeedService.class);
         MultiValueMap<String, String> queryParams = ctx.getRequest().getQueryParams();
         String name = queryParams.get("name");
@@ -45,7 +66,7 @@ public class ReadController {
         if (optFlux.isPresent()) {
             Flux flux = optFlux.get();
             SyndFeedImpl feed = new SyndFeedImpl();
-            feed.setFeedType("atom_1.0");
+            feed.setFeedType(feedType);
             feed.setTitle(flux.getTitle());
             feed.setDescription(flux.getDescription());
 
@@ -61,6 +82,8 @@ public class ReadController {
 
                 entry.setAuthor(article.getAuthor());
                 entry.setUri(article.getUrl());
+                entry.setLink(article.getUrl());
+                entry.setPublishedDate(article.getPublishedAt());
 
                 List<SyndCategory> categories = new ArrayList<>();
 

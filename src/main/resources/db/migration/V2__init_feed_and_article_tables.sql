@@ -22,5 +22,6 @@ CREATE TABLE fluxdb.article (
   content TEXT NOT NULL,
   author VARCHAR(100),
   tags VARCHAR(255),
+  published_at TIMESTAMP NOT NULL,
   CONSTRAINT fk_flux_url FOREIGN KEY (flux_url) REFERENCES fluxdb.feed(url)
 );

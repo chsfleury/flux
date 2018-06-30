@@ -98,6 +98,7 @@ public class DefaultFeedService implements FeedService {
                     entry.getAuthor(),
                     entry.getDescription().getValue(),
                     entry.getContents().get(0).getValue(),
+                    Time.timestamp(entry.getPublishedDate()),
                     entry.getCategories().stream().map(SyndCategory::getName).collect(Collectors.toList())
             );
             flux.getArticles().add(article);
@@ -119,6 +120,7 @@ public class DefaultFeedService implements FeedService {
                                 articleRecord.getAuthor(),
                                 articleRecord.getDescription(),
                                 articleRecord.getContent(),
+                                articleRecord.getPublishedAt(),
                                 COMMA_SPLITTER.splitToList(articleRecord.getTags())
                         );
 
@@ -214,6 +216,7 @@ public class DefaultFeedService implements FeedService {
                 .setDescription(entry.getDescription().getValue())
                 .setAuthor(entry.getAuthor())
                 .setUrl(entry.getLink())
+                .setPublishedAt(Time.timestamp(entry.getPublishedDate()))
                 .setContent(entry.getContents().get(0).getValue())
                 .setTags(formatCategories(entry.getCategories()));
     }
