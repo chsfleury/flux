@@ -13,7 +13,7 @@
 <body>
 <header>
     <span>{{ flux.title }}</span>
-    <div class="subhead">{{ flux.subtitle }}</div>
+    <div class="subhead">{{ flux.description }}</div>
 </header>
 
 <main class="content">
@@ -22,7 +22,7 @@
         <article class="column">
             <header>
                 {{ article.title }}
-                <div class="subhead">{{ article.subtitle }}</div>
+                <div class="subhead">{{ article.description }}</div>
             </header>
             {% autoescape false %}
             {{ article.content }}
